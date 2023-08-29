@@ -1,0 +1,37 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "FUNNY STUFF", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+   Name = "fun",
+   Icon = "rbxassetid://4483345998",
+   PremiumOnly = false
+})
+
+Tab:AddButton({
+   Name = "verified icon",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/darkhub-safe/main/Verified_Icon.lua'))()
+   end
+})
+
+Tab:AddButton({
+   Name = "video star on the leaderboard",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/darkhub-safe/main/VIDEO%20STAR'))()
+   end
+})
+
+Tab:AddButton({
+   Name = "fe spam",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/troll/main/fe%20spam'))()
+   end
+})
+
+Tab:AddButton({
+   Name = "hammer icon",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/darkhub-safe/main/dev'))()
+   end
+})
+
+OrionLib:Init()
