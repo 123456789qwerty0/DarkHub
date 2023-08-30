@@ -1,0 +1,61 @@
+local function CreateMessageBox(title, message, buttonText, callback)
+    local player = game.Players.LocalPlayer
+    local gui = Instance.new("ScreenGui")
+    local frame = Instance.new("Frame")
+    local titleLabel = Instance.new("TextLabel")
+    local messageLabel = Instance.new("TextLabel")
+    local button = Instance.new("TextButton")
+
+    gui.Name = "MessageBoxGui"
+    gui.Parent = player.PlayerGui
+    gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+    frame.Name = "Frame"
+    frame.Parent = gui
+    frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    frame.Position = UDim2.new(0.5, -150, 0.5, -75)
+    frame.Size = UDim2.new(0, 300, 0, 150)
+
+    titleLabel.Name = "TitleLabel"
+    titleLabel.Parent = frame
+    titleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    titleLabel.Size = UDim2.new(1, 0, 0, 30)
+    titleLabel.Font = Enum.Font.SourceSansBold
+    titleLabel.Text = title
+    titleLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+    titleLabel.TextSize = 20
+
+    messageLabel.Name = "MessageLabel"
+    messageLabel.Parent = frame
+    messageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    messageLabel.Position = UDim2.new(0, 10, 0, 40)
+    messageLabel.Size = UDim2.new(1, -20, 0, 60)
+    messageLabel.Font = Enum.Font.SourceSans
+    messageLabel.Text = message
+    messageLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    messageLabel.TextSize = 16
+    messageLabel.TextWrapped = true
+    messageLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+    button.Name = "Button"
+    button.Parent = frame
+    button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    button.Position = UDim2.new(0.5, -40, 1, -40)
+    button.Size = UDim2.new(0, 80, 0, 30)
+    button.Font = Enum.Font.SourceSansBold
+    button.Text = buttonText
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.TextSize = 18
+    button.MouseButton1Click:Connect(function()
+        callback()
+        gui:Destroy()
+    end)
+end
+
+CreateMessageBox("Warning", "AUTOFARM: NO GOING BACK", "OK", function()
+    local code = [[
+        -- Your code here
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/big%20paintball%20segment%201'))()
+    ]]
+    loadstring(code)()
+end)
