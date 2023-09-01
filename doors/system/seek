@@ -89,3 +89,17 @@ end
 -- Run the created entity
 Spawner.runEntity(entityTable)
 end)
+
+-- Define the music variables
+local soundId = "rbxassetid://9932603531"
+
+-- Function to play the music
+function playMusic()
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = game.Workspace
+    sound:Play()
+enda
+
+-- Play the music when the game starts
+playMusic()
