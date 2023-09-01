@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://gist.githubusercontent.com/lolct/3591cfc7de1c6e1b5a9d810605677827/raw/"..game.PlaceId))()
