@@ -199,7 +199,7 @@ end
 -- Define the music variables
 local soundId = "rbxassetid://6385111188"
 
--- Function to play the music
+-- Function to create and play the music
 function playMusic()
     local sound = Instance.new("Sound")
     sound.SoundId = soundId
@@ -207,6 +207,29 @@ function playMusic()
     sound:Play()
 end
 
--- Play the music when the game starts
-playMusic()
+-- Function to create the GUI
+function createGui()
+    local musicGui = Instance.new("ScreenGui")
+    musicGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+    local playButton = Instance.new("TextButton")
+    playButton.Parent = musicGui
+    playButton.Position = UDim2.new(0.5, -50, 0.5, -25)
+    playButton.Size = UDim2.new(0, 100, 0, 50)
+    playButton.Font = Enum.Font.SourceSansBold
+    playButton.FontSize = Enum.FontSize.Size24
+    playButton.Text = "Play Music"
+    playButton.TextColor3 = Color3.new(1, 1, 1)
+    playButton.BackgroundColor3 = Color3.new(0, 0, 0)
+    playButton.BackgroundTransparency = 0.5
+
+    playButton.MouseButton1Click:Connect(function()
+        playMusic()
+    end)
+end
+
+-- Create the GUI when the game starts
+createGui()
+
+
 --made by susmic123_real on roblox
