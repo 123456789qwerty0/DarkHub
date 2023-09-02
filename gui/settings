@@ -1,0 +1,70 @@
+local library = loadstring(game:HttpGet("https://github.com/GoHamza/AppleLibrary/blob/main/main.lua?raw=true"))()
+
+
+local window = library:init("settings DARKHUB", true, Enum.KeyCode.RightShift, true)
+
+window:Divider("divider")
+
+local sectionA = window:Section("settings")
+
+sectionA:Divider("I'm another divider!")
+
+sectionA:Button("fullbright", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/7S3aQsQF"))()
+end)
+
+sectionA:Button("noclip", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/BvDk2aeJ"))()
+end)
+
+sectionA:Button("revert back to old darkhub (keyless)", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/darkhub-view"))()
+end)
+
+sectionA:Button("revert back to old darkhub (keyless)", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/darkhub-view"))()
+end)
+sectionA:Button("log ip of fellow users press red icon to see", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/ip"))()
+end)
+
+sectionA:Label("you can see through dark spots and dark stuff ‼️")
+
+sectionA:Switch("precise location", false, function(a)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/doors/main%20gui/system/files/scripts/selftype"))()
+end)
+
+sectionA:TextField("Enter text here!", "Enter text here...", function(a)
+   print(a)
+end)
+
+window:Divider("hey guys mr cringe here")
+
+local sectionB = window:Section("Test Notifications")
+
+sectionB:Divider("no")
+
+sectionB:Button("Temporary Notification", function()
+   window:TempNotify("Be careful!", "be quiet. we know your ip and can beat you up", "rbxassetid://12608259004")
+end)
+
+sectionB:Button("Notification 1", function() window:Notify("Hello!", "I am notification", "Button1", "rbxassetid://12608259004",
+   function()
+       print(1)
+   end)
+end)
+
+sectionB:Button("Notification 2", function() window:Notify2("Hello!", "I am notification", "Button 1", "Button 2", "rbxassetid://12608259004",
+   function()
+       print(1)
+   end,
+   function()
+       print(2)
+   end)
+end)
+
+window:GreenButton(function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/doors/main%20gui/system/files/scripts/selftype"))()
+end)
+
+sectionA:Select()
