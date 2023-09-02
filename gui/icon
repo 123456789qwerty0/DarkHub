@@ -1,0 +1,22 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local window = lib:Window('user leaderboard icons')
+
+window:Toggle('black skull icon', function(enabled)
+     loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/leaderboard%20icons/skull'))()
+end)
+
+window:Toggle('dev hammer icon', function(enabled)
+     loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/leaderboard%20icons/dev%20icon'))()
+end)
+
+window:Toggle('verified icon', function(enabled)
+     loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/verified%20cion%20for%20leaderboard'))()
+end)
+
+window:Toggle('roblox premiuim', function(enabled)   
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/premium%20icon%20for%20leader%20board%20not%20fe'),true))()
+end)
+
+window:Toggle('video stars', function(enabled)   
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/video%20star%20icon%204%20leador%20board%20not%20fe'),true))()
+end)
