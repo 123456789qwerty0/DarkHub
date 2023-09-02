@@ -1,0 +1,24 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheoTheEpic/AquaLib/main/AquaLib.lua'))()
+local window = lib.createWindow("FREE ROBUX", "BIG PAINTBALL (NO FREE ROBUX)", true) 
+local tab1 = window.createTab("AUTOFARM")
+local section1 = tab1.createSection("START", false)
+
+tab.createButton("autofarm", function() -- tab.AddButton(text, callback)
+   loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/toggle%20alert'))()
+end)
+
+tab.createButton("eternity hub", function() -- tab.AddButton(text, callback)
+   local a="https://eternityhub.xyz/Script"local b=a.."/Eternity.lua"loadstring(game:HttpGet(b))()
+end)
+
+tab.createButton("STARSCRIPTSX", function() -- tab.AddButton(text, callback)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/migu-star/Scripts/main/Paintball.lua"))()
+end)
+
+tab.createButton("UNNAMED ESP", function() -- tab.AddButton(text, callback)
+   pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
+end)
+
+tab.createButton("OWL HUB", function() -- tab.AddButton(text, callback)
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/doors/main%20gui/system/files/scripts/selftype'))()
+end)
