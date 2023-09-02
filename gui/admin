@@ -1,0 +1,18 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local window = lib:Window('admin gui')
+
+window:Toggle('c00lkid gui', function(enabled)
+     loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/c00lkid'))()
+end)
+
+window:Toggle('kohls admin house', function(enabled)
+     loadstring(Game:HttpGet('https://pastebin.com/raw/rxkyNvLh'))()
+end)
+
+window:Toggle('unfair hub', function(enabled)
+     loadstring(Game:HttpGet('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'))()
+end)
+
+window:Toggle('infinte yeld', function(enabled)   
+     loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+end)
