@@ -1,0 +1,17 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local window = lib:Window('doors mods')
+window:Toggle('night mod', function(enabled)
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Night%20Time%20Toggle.txt"))()
+end)
+
+window:Toggle('fe spam sound gui', function(enabled)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/troll/main/fe%20spam"))()
+end)
+
+window:Toggle('float', function(enabled)
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Float%20Character.txt"))()
+end)
+
+window:Toggle('EZ HUB', function(enabled)
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Ez%20Hub.txt"))()
+end)
