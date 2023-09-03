@@ -1,0 +1,9 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local window = lib:Window('doors mods')
+window:Toggle('mcdonald mod!! door 0', function(enabled)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/MCDonalds"))()
+end)
+
+window:Toggle('verified icon spam (blow pc up)', function(enabled)
+    loadstring(game:HttpGet("https://pastebin.com/raw/fJmXFHMR"))()
+end)
