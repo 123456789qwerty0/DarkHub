@@ -1,0 +1,109 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "item gui", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "fe",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "subspace tripmine",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/SUBSPACE%20TRIPMINE%20BY%20SUSMIC123_REAL.txt')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "jeff plush",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/JEFF%20PLUSH.txt"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "subspace tripmine",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/SUBSPACE%20TRIPMINE%20BY%20SUSMIC123_REAL.txt')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "shears",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/rXgH5FGT')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "flamethrower",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/flamethrower%20doors.txt')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "purple flashlight",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/purple%20flashlight%20doors.txt')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "crucifix",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/CRUCIFIX%20ON%20ANYTHING%20DOORS!.txt')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "book",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "revenge mode",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/x4haGbhD"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "mcdonalds at door 0",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/MCDonalds"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "grenade",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/GRENADE%20DOORS.txt"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "grenade",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/GRENADE%20DOORS.txt"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "holy hand grenade any mode",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/HOLY%20HAND%20GRENADE.txt"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "lazer gun",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/lazer%20gun%20script%20doors.txt"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "jeff plush",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/JEFF%20PLUSH.txt"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "home",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/reboot"))()
+  	end    
+})
+OrionLib:Init()
