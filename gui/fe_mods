@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
-local window = lib:Window('doors mods')
+local window = lib:Window('FE MODS')
 window:Toggle('night mod', function(enabled)
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Night%20Time%20Toggle.txt"))()
 end)
