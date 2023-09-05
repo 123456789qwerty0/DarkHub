@@ -1,0 +1,3375 @@
+--BETA 1
+
+local Holder = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Dark = Instance.new("Frame")
+local Cmdbar = Instance.new("TextBox")
+local Dark_2 = Instance.new("Frame")
+local CMDsF = Instance.new("ScrollingFrame")
+local SettingsButton = Instance.new("ImageButton")
+local Settings = Instance.new("Frame")
+local Prefix = Instance.new("TextLabel")
+local PrefixBox = Instance.new("TextBox")
+local Keybinds = Instance.new("TextLabel")
+local Select = Instance.new("TextButton")
+local StayOpen = Instance.new("TextLabel")
+local Button = Instance.new("Frame")
+local On = Instance.new("TextButton")
+local Color = Instance.new("TextLabel")
+local Select_2 = Instance.new("TextButton")
+local Example = Instance.new("TextLabel")
+local Notification = Instance.new("Frame")
+local Dark_3 = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Text_2 = Instance.new("TextLabel")
+local CloseButton = Instance.new("ImageButton")
+local Logo = Instance.new("ImageLabel")
+local KeybindEditor = Instance.new("Frame")
+local Dark_4 = Instance.new("Frame")
+local Directions = Instance.new("TextLabel")
+local BindTo = Instance.new("TextButton")
+local Add_2 = Instance.new("TextButton")
+local Cmdbar_2 = Instance.new("TextBox")
+local CloseButton_2 = Instance.new("ImageButton")
+local KeybindsFrame = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Add = Instance.new("TextButton")
+local Delete = Instance.new("TextButton")
+local Holder_2 = Instance.new("ScrollingFrame")
+local Example_2 = Instance.new("Frame")
+local Text_3 = Instance.new("TextLabel")
+local Delete_2 = Instance.new("TextButton")
+local Toggles = Instance.new("ScrollingFrame")
+local Fly = Instance.new("TextLabel")
+local Select_3 = Instance.new("TextButton")
+local Noclip = Instance.new("TextLabel")
+local Select_4 = Instance.new("TextButton")
+local Float = Instance.new("TextLabel")
+local Select_5 = Instance.new("TextButton")
+local ClickTP = Instance.new("TextLabel")
+local Select_6 = Instance.new("TextButton")
+local AliasesFrame = Instance.new("Frame")
+local Close_2 = Instance.new("TextButton")
+local Delete_3 = Instance.new("TextButton")
+local Holder_3 = Instance.new("ScrollingFrame")
+local Example_3 = Instance.new("Frame")
+local Text_4 = Instance.new("TextLabel")
+local Delete_4 = Instance.new("TextButton")
+local Aliases = Instance.new("TextLabel")
+local Select_7 = Instance.new("TextButton")
+
+length = 20
+local array = {}
+local array2 = {}
+local array3 = {}
+for i = 1, length do
+	array[i] = string.char(math.random(32, 126))
+	array2[i] = string.char(math.random(32, 126))
+	array3[i] = string.char(math.random(32, 126))
+end
+
+Holder.Name = table.concat(array)
+Holder.Parent = game:GetService("CoreGui").RobloxGui
+Holder.Active = true
+Holder.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Holder.BackgroundTransparency = 0.20000000298023
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(1, -250, 1, -220)
+Holder.Size = UDim2.new(0, 250, 0, 220)
+
+Title.Name = "Title"
+Title.Parent = Holder
+Title.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Title.BackgroundTransparency = 1
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 250, 0, 20)
+Title.Font = Enum.Font.SourceSans
+Title.TextSize = 20
+Title.Text = "Infinite Yield FE (BETA)"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextStrokeTransparency = 0
+
+Dark.Name = "Dark"
+Dark.Parent = Holder
+Dark.Active = true
+Dark.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Dark.BorderSizePixel = 0
+Dark.Position = UDim2.new(0, 0, 0, 45)
+Dark.Size = UDim2.new(0, 250, 0, 175)
+
+Cmdbar.Name = "Cmdbar"
+Cmdbar.Parent = Holder
+Cmdbar.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Cmdbar.BackgroundTransparency = 1
+Cmdbar.BorderColor3 = Color3.new(1, 1, 1)
+Cmdbar.BorderSizePixel = 0
+Cmdbar.Position = UDim2.new(0, 0, 0, 25)
+Cmdbar.Size = UDim2.new(0, 250, 0, 20)
+Cmdbar.Font = Enum.Font.SourceSans
+Cmdbar.FontSize = Enum.FontSize.Size18
+Cmdbar.Text = "Command Bar"
+Cmdbar.TextColor3 = Color3.new(1, 1, 1)
+Cmdbar.TextScaled = true
+Cmdbar.TextWrapped = true
+Cmdbar.TextStrokeTransparency = 0
+
+Dark_2.Name = "Dark"
+Dark_2.Parent = Holder
+Dark_2.Active = true
+Dark_2.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Dark_2.BorderSizePixel = 0
+Dark_2.Position = UDim2.new(0, 0, 0, 20)
+Dark_2.Size = UDim2.new(0, 250, 0, 5)
+
+CMDsF.Name = "CMDs"
+CMDsF.Parent = Holder
+CMDsF.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+CMDsF.BackgroundTransparency = 1
+CMDsF.BorderColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+CMDsF.BorderSizePixel = 0
+CMDsF.Position = UDim2.new(0, 0, 0, 50)
+CMDsF.Size = UDim2.new(0, 250, 0, 170)
+CMDsF.BottomImage = "rbxasset://textures/blackBkg_square.png"
+CMDsF.CanvasSize = UDim2.new(0, 0, 0, 0)
+CMDsF.MidImage = "rbxasset://textures/blackBkg_square.png"
+CMDsF.ScrollBarThickness = 8
+CMDsF.TopImage = "rbxasset://textures/blackBkg_square.png"
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = Holder
+SettingsButton.BackgroundColor3 = Color3.new(1, 1, 1)
+SettingsButton.BackgroundTransparency = 1
+SettingsButton.Position = UDim2.new(0, 230, 0, 25)
+SettingsButton.Size = UDim2.new(0, 20, 0, 20)
+SettingsButton.Image = "rbxassetid://1204397029"
+
+Settings.Name = "Settings"
+Settings.Parent = Holder
+Settings.Active = true
+Settings.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0, 0, 0, 220)
+Settings.Size = UDim2.new(0, 250, 0, 175)
+
+Prefix.Name = "Prefix"
+Prefix.Parent = Settings
+Prefix.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Prefix.BackgroundTransparency = 0.5
+Prefix.BorderSizePixel = 0
+Prefix.Position = UDim2.new(0, 0, 0, 5)
+Prefix.Size = UDim2.new(0, 250, 0, 20)
+Prefix.Font = Enum.Font.SourceSans
+Prefix.FontSize = Enum.FontSize.Size14
+Prefix.Text = "    Prefix"
+Prefix.TextColor3 = Color3.new(1, 1, 1)
+Prefix.TextXAlignment = Enum.TextXAlignment.Left
+
+PrefixBox.Name = "PrefixBox"
+PrefixBox.Parent = Prefix
+PrefixBox.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+PrefixBox.BorderSizePixel = 0
+PrefixBox.Position = UDim2.new(0, 230, 0, 0)
+PrefixBox.Size = UDim2.new(0, 20, 0, 20)
+PrefixBox.Font = Enum.Font.SourceSansBold
+PrefixBox.FontSize = Enum.FontSize.Size14
+PrefixBox.Text = ''
+PrefixBox.TextColor3 = Color3.new(0, 0, 0)
+
+Keybinds.Name = "Keybinds"
+Keybinds.Parent = Settings
+Keybinds.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Keybinds.BackgroundTransparency = 0.5
+Keybinds.BorderSizePixel = 0
+Keybinds.Position = UDim2.new(0, 0, 0, 55)
+Keybinds.Size = UDim2.new(0, 250, 0, 20)
+Keybinds.Font = Enum.Font.SourceSans
+Keybinds.FontSize = Enum.FontSize.Size14
+Keybinds.Text = "    Keybinds"
+Keybinds.TextColor3 = Color3.new(1, 1, 1)
+Keybinds.TextXAlignment = Enum.TextXAlignment.Left
+
+Select.Name = "Select"
+Select.Parent = Keybinds
+Select.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Select.BorderSizePixel = 0
+Select.Position = UDim2.new(0, 200, 0, 0)
+Select.Size = UDim2.new(0, 50, 0, 20)
+Select.Font = Enum.Font.SourceSans
+Select.FontSize = Enum.FontSize.Size14
+Select.Text = "Edit"
+Select.TextColor3 = Color3.new(0, 0, 0)
+
+Aliases.Name = "Aliases"
+Aliases.Parent = Settings
+Aliases.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Aliases.BackgroundTransparency = 0.5
+Aliases.BorderSizePixel = 0
+Aliases.Position = UDim2.new(0, 0, 0, 80)
+Aliases.Size = UDim2.new(0, 250, 0, 20)
+Aliases.Font = Enum.Font.SourceSans
+Aliases.FontSize = Enum.FontSize.Size14
+Aliases.Text = "    Aliases"
+Aliases.TextColor3 = Color3.new(1, 1, 1)
+Aliases.TextXAlignment = Enum.TextXAlignment.Left
+
+Select_7.Name = "Select"
+Select_7.Parent = Aliases
+Select_7.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Select_7.BorderSizePixel = 0
+Select_7.Position = UDim2.new(0, 200, 0, 0)
+Select_7.Size = UDim2.new(0, 50, 0, 20)
+Select_7.Font = Enum.Font.SourceSans
+Select_7.FontSize = Enum.FontSize.Size14
+Select_7.Text = "Edit"
+Select_7.TextColor3 = Color3.new(0, 0, 0)
+
+StayOpen.Name = "StayOpen"
+StayOpen.Parent = Settings
+StayOpen.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+StayOpen.BackgroundTransparency = 0.5
+StayOpen.BorderSizePixel = 0
+StayOpen.Position = UDim2.new(0, 0, 0, 30)
+StayOpen.Size = UDim2.new(0, 250, 0, 20)
+StayOpen.Font = Enum.Font.SourceSans
+StayOpen.FontSize = Enum.FontSize.Size14
+StayOpen.Text = "    Keep Menu Open"
+StayOpen.TextColor3 = Color3.new(1, 1, 1)
+StayOpen.TextXAlignment = Enum.TextXAlignment.Left
+
+Button.Name = "Button"
+Button.Parent = StayOpen
+Button.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0, 230, 0, 0)
+Button.Size = UDim2.new(0, 20, 0, 20)
+
+On.Name = "On"
+On.Parent = Button
+On.BackgroundColor3 = Color3.new(0.8, 0.8, 0.8)
+On.BackgroundTransparency = 1
+On.BorderSizePixel = 0
+On.Position = UDim2.new(0, 2, 0, 2)
+On.Size = UDim2.new(0, 16, 0, 16)
+On.Font = Enum.Font.SourceSans
+On.FontSize = Enum.FontSize.Size14
+On.Text = ""
+On.TextColor3 = Color3.new(0, 0, 0)
+
+Color.Name = "Color"
+Color.Parent = Settings
+Color.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Color.BackgroundTransparency = 0.5
+Color.BorderSizePixel = 0
+Color.Position = UDim2.new(0, 0, 0, 105)
+Color.Size = UDim2.new(0, 250, 0, 20)
+Color.Font = Enum.Font.SourceSans
+Color.FontSize = Enum.FontSize.Size14
+Color.Text = "    UI Color"
+Color.TextColor3 = Color3.new(1, 1, 1)
+Color.TextXAlignment = Enum.TextXAlignment.Left
+
+Select_2.Name = "Select"
+Select_2.Parent = Color
+Select_2.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Select_2.BorderSizePixel = 0
+Select_2.Position = UDim2.new(0, 200, 0, 0)
+Select_2.Size = UDim2.new(0, 50, 0, 20)
+Select_2.Font = Enum.Font.SourceSans
+Select_2.FontSize = Enum.FontSize.Size14
+Select_2.Text = "Change"
+Select_2.TextColor3 = Color3.new(0, 0, 0)
+
+Example.Name = "Example"
+Example.Parent = Holder
+Example.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Example.BackgroundTransparency = 1
+Example.BorderColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Example.BorderSizePixel = 0
+Example.Size = UDim2.new(0, 190, 0, 20)
+Example.Visible = false
+Example.Font = Enum.Font.SourceSansBold
+Example.FontSize = Enum.FontSize.Size18
+Example.Text = "Example"
+Example.TextColor3 = Color3.new(0.972549, 0.972549, 0.972549)
+Example.TextStrokeTransparency = 0
+Example.TextXAlignment = Enum.TextXAlignment.Left
+
+Notification.Name = table.concat(array2)
+Notification.Parent = game:GetService("CoreGui").RobloxGui
+Notification.Active = true
+Notification.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Notification.BackgroundTransparency = 0
+Notification.BorderSizePixel = 0
+Notification.Position = UDim2.new(1, -500, 1, 20)
+Notification.Size = UDim2.new(0, 250, 0, 100)
+
+Dark_3.Name = "Dark"
+Dark_3.Parent = Notification
+Dark_3.Active = true
+Dark_3.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Dark_3.BackgroundTransparency = 0.5
+Dark_3.Position = UDim2.new(0, 0, 0, 20)
+Dark_3.Size = UDim2.new(0, 250, 0, 5)
+
+Title_2.Name = "Title"
+Title_2.Parent = Notification
+Title_2.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Title_2.BackgroundTransparency = 1
+Title_2.BorderSizePixel = 0
+Title_2.Size = UDim2.new(0, 250, 0, 20)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.TextSize = 20
+Title_2.Text = "Notification Title"
+Title_2.TextColor3 = Color3.new(1, 1, 1)
+Title_2.TextStrokeTransparency = 0
+
+Text_2.Name = "Text"
+Text_2.Parent = Notification
+Text_2.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Text_2.BackgroundTransparency = 1
+Text_2.BorderSizePixel = 0
+Text_2.Position = UDim2.new(0, 0, 0, 25)
+Text_2.Size = UDim2.new(0, 250, 0, 75)
+Text_2.Font = Enum.Font.SourceSans
+Text_2.FontSize = Enum.FontSize.Size18
+Text_2.Text = "Notification Text"
+Text_2.TextColor3 = Color3.new(1, 1, 1)
+Text_2.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Notification
+CloseButton.BackgroundColor3 = Color3.new(1, 1, 1)
+CloseButton.BackgroundTransparency = 1
+CloseButton.Position = UDim2.new(0, 3, 0, 3)
+CloseButton.Size = UDim2.new(0, 14, 0, 14)
+CloseButton.Image = "rbxassetid://2127938821"
+
+Logo.Name = "Logo"
+Logo.Parent = Holder
+Logo.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo.BackgroundTransparency = 1
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0, 125, 0, 127)
+Logo.Size = UDim2.new(0, 10, 0, 10)
+Logo.Image = "rbxassetid://1352543873"
+Logo.ImageTransparency = 0
+
+KeybindEditor.Name = table.concat(array3)
+KeybindEditor.Parent = game:GetService("CoreGui").RobloxGui
+KeybindEditor.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+KeybindEditor.BackgroundTransparency = 0
+KeybindEditor.BorderSizePixel = 0
+KeybindEditor.Position = UDim2.new(0.5, -180, 0.5, 500)
+KeybindEditor.Size = UDim2.new(0, 360, 0, 160)
+
+Dark_4.Name = "Dark"
+Dark_4.Parent = KeybindEditor
+Dark_4.Active = true
+Dark_4.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Dark_4.BackgroundTransparency = 0.5
+Dark_4.BorderSizePixel = 0
+Dark_4.Position = UDim2.new(0, 135, 0, 0)
+Dark_4.Size = UDim2.new(0, 5, 0, 160)
+
+Directions.Name = "Directions"
+Directions.Parent = KeybindEditor
+Directions.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Directions.BackgroundTransparency = 1
+Directions.BorderColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Directions.BorderSizePixel = 0
+Directions.Position = UDim2.new(0, 10, 0, 15)
+Directions.Size = UDim2.new(0, 115, 0, 90)
+Directions.Font = Enum.Font.SourceSansBold
+Directions.FontSize = Enum.FontSize.Size14
+Directions.Text = "Click the button below and press a key/mouse button. Then select what you want to bind it to."
+Directions.TextColor3 = Color3.new(0.972549, 0.972549, 0.972549)
+Directions.TextStrokeTransparency = 0
+Directions.TextWrapped = true
+Directions.TextYAlignment = Enum.TextYAlignment.Top
+
+BindTo.Name = "BindTo"
+BindTo.Parent = KeybindEditor
+BindTo.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+BindTo.BackgroundTransparency = 0.5
+BindTo.BorderSizePixel = 0
+BindTo.Position = UDim2.new(0, 10, 0, 100)
+BindTo.Size = UDim2.new(0, 115, 0, 50)
+BindTo.Font = Enum.Font.SourceSans
+BindTo.FontSize = Enum.FontSize.Size18
+BindTo.Text = "Click to bind"
+BindTo.TextColor3 = Color3.new(1, 1, 1)
+BindTo.TextStrokeTransparency = 0
+
+Add_2.Name = "Add"
+Add_2.Parent = KeybindEditor
+Add_2.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Add_2.BackgroundTransparency = 0.5
+Add_2.BorderSizePixel = 0
+Add_2.Position = UDim2.new(0, 310, 0, 10)
+Add_2.Size = UDim2.new(0, 40, 0, 20)
+Add_2.Font = Enum.Font.SourceSans
+Add_2.FontSize = Enum.FontSize.Size18
+Add_2.Text = "Add"
+Add_2.TextColor3 = Color3.new(1, 1, 1)
+Add_2.TextStrokeTransparency = 0
+
+Cmdbar_2.Name = "Cmdbar"
+Cmdbar_2.Parent = KeybindEditor
+Cmdbar_2.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Cmdbar_2.BackgroundTransparency = 0.5
+Cmdbar_2.BorderColor3 = Color3.new(1, 1, 1)
+Cmdbar_2.BorderSizePixel = 0
+Cmdbar_2.Position = UDim2.new(0, 150, 0, 10)
+Cmdbar_2.Size = UDim2.new(0, 150, 0, 20)
+Cmdbar_2.Font = Enum.Font.SourceSans
+Cmdbar_2.FontSize = Enum.FontSize.Size18
+Cmdbar_2.Text = "Command"
+Cmdbar_2.TextColor3 = Color3.new(1, 1, 1)
+Cmdbar_2.TextScaled = true
+Cmdbar_2.TextStrokeTransparency = 0
+Cmdbar_2.TextWrapped = true
+
+CloseButton_2.Name = "CloseButton"
+CloseButton_2.Parent = KeybindEditor
+CloseButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+CloseButton_2.BackgroundTransparency = 1
+CloseButton_2.Position = UDim2.new(0, 3, 0, 3)
+CloseButton_2.Size = UDim2.new(0, 14, 0, 14)
+CloseButton_2.Image = "rbxassetid://2127938821"
+
+KeybindsFrame.Name = "KeybindsFrame"
+KeybindsFrame.Parent = Settings
+KeybindsFrame.Active = true
+KeybindsFrame.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+KeybindsFrame.BorderSizePixel = 0
+KeybindsFrame.Position = UDim2.new(0, 0, 0, 175)
+KeybindsFrame.Size = UDim2.new(0, 250, 0, 175)
+
+Close.Name = "Close"
+Close.Parent = KeybindsFrame
+Close.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0, 205, 0, 150)
+Close.Size = UDim2.new(0, 40, 0, 20)
+Close.Font = Enum.Font.SourceSans
+Close.FontSize = Enum.FontSize.Size14
+Close.Text = "Close"
+Close.TextColor3 = Color3.new(0, 0, 0)
+
+Add.Name = "Add"
+Add.Parent = KeybindsFrame
+Add.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Add.BorderSizePixel = 0
+Add.Position = UDim2.new(0, 5, 0, 150)
+Add.Size = UDim2.new(0, 40, 0, 20)
+Add.Font = Enum.Font.SourceSans
+Add.FontSize = Enum.FontSize.Size14
+Add.Text = "Add"
+Add.TextColor3 = Color3.new(0, 0, 0)
+
+Delete.Name = "Delete"
+Delete.Parent = KeybindsFrame
+Delete.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Delete.BorderSizePixel = 0
+Delete.Position = UDim2.new(0, 50, 0, 150)
+Delete.Size = UDim2.new(0, 40, 0, 20)
+Delete.Font = Enum.Font.SourceSans
+Delete.FontSize = Enum.FontSize.Size14
+Delete.Text = "Clear"
+Delete.TextColor3 = Color3.new(0, 0, 0)
+
+Holder_2.Name = "Holder"
+Holder_2.Parent = KeybindsFrame
+Holder_2.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Holder_2.BackgroundTransparency = 1
+Holder_2.BorderColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Holder_2.BorderSizePixel = 0
+Holder_2.Position = UDim2.new(0, 0, 0, 0)
+Holder_2.Size = UDim2.new(0, 250, 0, 145)
+Holder_2.BottomImage = "rbxasset://textures/blackBkg_square.png"
+Holder_2.CanvasSize = UDim2.new(0, 0, 0, 0)
+Holder_2.MidImage = "rbxasset://textures/blackBkg_square.png"
+Holder_2.ScrollBarThickness = 0
+Holder_2.TopImage = "rbxasset://textures/blackBkg_square.png"
+
+Example_2.Name = "Example"
+Example_2.Parent = KeybindsFrame
+Example_2.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Example_2.BackgroundTransparency = 0.5
+Example_2.BorderSizePixel = 0
+Example_2.Size = UDim2.new(0, 10, 0, 20)
+Example_2.Visible = false
+
+Text_3.Name = "Text"
+Text_3.Parent = Example_2
+Text_3.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Text_3.BackgroundTransparency = 0.5
+Text_3.BorderSizePixel = 0
+Text_3.Position = UDim2.new(0, 10, 0, 0)
+Text_3.Size = UDim2.new(0, 240, 0, 20)
+Text_3.Font = Enum.Font.SourceSans
+Text_3.FontSize = Enum.FontSize.Size14
+Text_3.Text = "nom"
+Text_3.TextColor3 = Color3.new(1, 1, 1)
+Text_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Delete_2.Name = "Delete"
+Delete_2.Parent = Text_3
+Delete_2.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Delete_2.BorderSizePixel = 0
+Delete_2.Position = UDim2.new(0, 200, 0, 0)
+Delete_2.Size = UDim2.new(0, 40, 0, 20)
+Delete_2.Font = Enum.Font.SourceSans
+Delete_2.FontSize = Enum.FontSize.Size14
+Delete_2.Text = "Delete"
+Delete_2.TextColor3 = Color3.new(0, 0, 0)
+
+Toggles.Name = "Toggles"
+Toggles.Parent = KeybindEditor
+Toggles.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Toggles.BackgroundTransparency = 1
+Toggles.BorderColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Toggles.BorderSizePixel = 0
+Toggles.Position = UDim2.new(0, 150, 0, 40)
+Toggles.Size = UDim2.new(0, 200, 0, 110)
+Toggles.BottomImage = "rbxasset://textures/blackBkg_square.png"
+Toggles.CanvasSize = UDim2.new(0, 0, 0, 0)
+Toggles.MidImage = "rbxasset://textures/blackBkg_square.png"
+Toggles.ScrollBarThickness = 8
+Toggles.TopImage = "rbxasset://textures/blackBkg_square.png"
+
+Fly.Name = "Fly"
+Fly.Parent = Toggles
+Fly.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Fly.BackgroundTransparency = 0.5
+Fly.BorderSizePixel = 0
+Fly.Size = UDim2.new(0, 200, 0, 20)
+Fly.Font = Enum.Font.SourceSans
+Fly.FontSize = Enum.FontSize.Size14
+Fly.Text = "    Toggle Fly"
+Fly.TextColor3 = Color3.new(1, 1, 1)
+Fly.TextXAlignment = Enum.TextXAlignment.Left
+
+Select_3.Name = "Select"
+Select_3.Parent = Fly
+Select_3.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Select_3.BorderSizePixel = 0
+Select_3.Position = UDim2.new(0, 160, 0, 0)
+Select_3.Size = UDim2.new(0, 40, 0, 20)
+Select_3.Font = Enum.Font.SourceSans
+Select_3.FontSize = Enum.FontSize.Size14
+Select_3.Text = "Add"
+Select_3.TextColor3 = Color3.new(0, 0, 0)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Toggles
+Noclip.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Noclip.BackgroundTransparency = 0.5
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0, 0, 0, 25)
+Noclip.Size = UDim2.new(0, 200, 0, 20)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.FontSize = Enum.FontSize.Size14
+Noclip.Text = "    Toggle Noclip"
+Noclip.TextColor3 = Color3.new(1, 1, 1)
+Noclip.TextXAlignment = Enum.TextXAlignment.Left
+
+Select_4.Name = "Select"
+Select_4.Parent = Noclip
+Select_4.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Select_4.BorderSizePixel = 0
+Select_4.Position = UDim2.new(0, 160, 0, 0)
+Select_4.Size = UDim2.new(0, 40, 0, 20)
+Select_4.Font = Enum.Font.SourceSans
+Select_4.FontSize = Enum.FontSize.Size14
+Select_4.Text = "Add"
+Select_4.TextColor3 = Color3.new(0, 0, 0)
+
+Float.Name = "Float"
+Float.Parent = Toggles
+Float.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Float.BackgroundTransparency = 0.5
+Float.BorderSizePixel = 0
+Float.Position = UDim2.new(0, 0, 0, 50)
+Float.Size = UDim2.new(0, 200, 0, 20)
+Float.Font = Enum.Font.SourceSans
+Float.FontSize = Enum.FontSize.Size14
+Float.Text = "    Toggle Float"
+Float.TextColor3 = Color3.new(1, 1, 1)
+Float.TextXAlignment = Enum.TextXAlignment.Left
+
+Select_5.Name = "Select"
+Select_5.Parent = Float
+Select_5.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Select_5.BorderSizePixel = 0
+Select_5.Position = UDim2.new(0, 160, 0, 0)
+Select_5.Size = UDim2.new(0, 40, 0, 20)
+Select_5.Font = Enum.Font.SourceSans
+Select_5.FontSize = Enum.FontSize.Size14
+Select_5.Text = "Add"
+Select_5.TextColor3 = Color3.new(0, 0, 0)
+
+ClickTP.Name = "Click TP"
+ClickTP.Parent = Toggles
+ClickTP.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+ClickTP.BackgroundTransparency = 0.5
+ClickTP.BorderSizePixel = 0
+ClickTP.Position = UDim2.new(0, 0, 0, 75)
+ClickTP.Size = UDim2.new(0, 200, 0, 20)
+ClickTP.Font = Enum.Font.SourceSans
+ClickTP.FontSize = Enum.FontSize.Size14
+ClickTP.Text = "    Click TP (Hold Key)"
+ClickTP.TextColor3 = Color3.new(1, 1, 1)
+ClickTP.TextXAlignment = Enum.TextXAlignment.Left
+
+Select_6.Name = "Select"
+Select_6.Parent = ClickTP
+Select_6.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Select_6.BorderSizePixel = 0
+Select_6.Position = UDim2.new(0, 160, 0, 0)
+Select_6.Size = UDim2.new(0, 40, 0, 20)
+Select_6.Font = Enum.Font.SourceSans
+Select_6.FontSize = Enum.FontSize.Size14
+Select_6.Text = "Add"
+Select_6.TextColor3 = Color3.new(0, 0, 0)
+
+AliasesFrame.Name = "AliasesFrame"
+AliasesFrame.Parent = Settings
+AliasesFrame.Active = true
+AliasesFrame.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+AliasesFrame.BorderSizePixel = 0
+AliasesFrame.Position = UDim2.new(0, 0, 0, 175)
+AliasesFrame.Size = UDim2.new(0, 250, 0, 175)
+
+Close_2.Name = "Close"
+Close_2.Parent = AliasesFrame
+Close_2.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0, 205, 0, 150)
+Close_2.Size = UDim2.new(0, 40, 0, 20)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.FontSize = Enum.FontSize.Size14
+Close_2.Text = "Close"
+Close_2.TextColor3 = Color3.new(0, 0, 0)
+
+Delete_3.Name = "Delete"
+Delete_3.Parent = AliasesFrame
+Delete_3.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Delete_3.BorderSizePixel = 0
+Delete_3.Position = UDim2.new(0, 5, 0, 150)
+Delete_3.Size = UDim2.new(0, 40, 0, 20)
+Delete_3.Font = Enum.Font.SourceSans
+Delete_3.FontSize = Enum.FontSize.Size14
+Delete_3.Text = "Clear"
+Delete_3.TextColor3 = Color3.new(0, 0, 0)
+
+Holder_3.Name = "Holder"
+Holder_3.Parent = AliasesFrame
+Holder_3.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Holder_3.BackgroundTransparency = 1
+Holder_3.BorderColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Holder_3.BorderSizePixel = 0
+Holder_3.Position = UDim2.new(0, 0, 0, 5)
+Holder_3.Size = UDim2.new(0, 250, 0, 140)
+Holder_3.BottomImage = "rbxasset://textures/blackBkg_square.png"
+Holder_3.CanvasSize = UDim2.new(0, 0, 0, 0)
+Holder_3.MidImage = "rbxasset://textures/blackBkg_square.png"
+Holder_3.ScrollBarThickness = 0
+Holder_3.TopImage = "rbxasset://textures/blackBkg_square.png"
+
+Example_3.Name = "Example"
+Example_3.Parent = AliasesFrame
+Example_3.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Example_3.BackgroundTransparency = 0.5
+Example_3.BorderSizePixel = 0
+Example_3.Size = UDim2.new(0, 10, 0, 20)
+Example_3.Visible = false
+
+Text_4.Name = "Text"
+Text_4.Parent = Example_3
+Text_4.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+Text_4.BackgroundTransparency = 0.5
+Text_4.BorderSizePixel = 0
+Text_4.Position = UDim2.new(0, 10, 0, 0)
+Text_4.Size = UDim2.new(0, 240, 0, 20)
+Text_4.Font = Enum.Font.SourceSans
+Text_4.FontSize = Enum.FontSize.Size14
+Text_4.Text = "honk"
+Text_4.TextColor3 = Color3.new(1, 1, 1)
+Text_4.TextXAlignment = Enum.TextXAlignment.Left
+
+Delete_4.Name = "Delete"
+Delete_4.Parent = Text_4
+Delete_4.BackgroundColor3 = Color3.new(0.439216, 0.439216, 0.439216)
+Delete_4.BorderSizePixel = 0
+Delete_4.Position = UDim2.new(0, 200, 0, 0)
+Delete_4.Size = UDim2.new(0, 40, 0, 20)
+Delete_4.Font = Enum.Font.SourceSans
+Delete_4.FontSize = Enum.FontSize.Size14
+Delete_4.Text = "Delete"
+Delete_4.TextColor3 = Color3.new(0, 0, 0)
+
+function writefileExploit()
+	if writefile then
+		return true
+	end
+end
+
+defaultsettings = {
+	prefix = ';';
+	StayOpen = false;
+	aliases = {};
+	binds = {}	
+}
+
+defaults = game:GetService("HttpService"):JSONEncode(defaultsettings)
+
+function saves()
+	if writefileExploit() then
+		if pcall(function() readfile("IY_FE.iy") end) then
+			local json = game:GetService("HttpService"):JSONDecode(readfile("IY_FE.iy"))
+			prefix = json.prefix
+			StayOpen = json.StayOpen
+			aliases = json.aliases
+			binds = json.binds
+		else
+			writefile("IY_FE.iy", defaults)
+			wait()
+			saves()
+		end
+	else
+		prefix = ';'
+		StayOpen = false
+		aliases = {}
+		binds = {}	
+	end
+end
+
+saves()
+
+function updatesaves()
+	if writefileExploit() then
+		local update = {
+		prefix = prefix;
+		StayOpen = StayOpen;
+		aliases = aliases;
+		binds = binds
+		}
+		writefile("IY_FE.iy", game:GetService("HttpService"):JSONEncode(update))
+	end
+end
+
+Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+UserInputService = game:GetService("UserInputService")
+Players = game:GetService("Players")
+PrefixBox.Text = prefix
+SettingsOpen = false
+
+if StayOpen == false then
+	Holder.Settings.StayOpen.Button.On.BackgroundTransparency = 1
+else
+	Holder.Settings.StayOpen.Button.On.BackgroundTransparency = 0
+end
+
+function maximizeHolder()
+	if StayOpen == false then
+		Holder:TweenPosition(UDim2.new(1, -250, 1, -220), "InOut", "Quart", 0.2, true, nil)
+	end
+end
+
+function minimizeHolder()
+	if StayOpen == false then
+		Holder:TweenPosition(UDim2.new(1, -250, 1, -20), "InOut", "Quart", 0.5, true, nil)
+	end
+end
+
+function cmdbarHolder()
+	if StayOpen == false then
+		Holder:TweenPosition(UDim2.new(1, -250, 1, -45), "InOut", "Quart", 0.5, true, nil)
+	end
+end
+
+function enablebuttons()
+	Settings.Aliases.Select.Visible = true
+	Settings.Color.Select.Visible = true
+	Settings.Keybinds.Select.Visible = true
+	Settings.StayOpen.Button.On.Visible = true
+	Settings.Prefix.PrefixBox.Visible = true
+end
+
+function disablebuttons()
+	Settings.Aliases.Select.Visible = false
+	Settings.Color.Select.Visible = false
+	Settings.Keybinds.Select.Visible = false
+	Settings.StayOpen.Button.On.Visible = false
+	Settings.Prefix.PrefixBox.Visible = false
+end
+
+notifyCount = 0
+function notify(title,text)
+	spawn(function()
+		local LnotifyCount = notifyCount+1
+		notifyCount = notifyCount+1
+		Notification:TweenPosition(UDim2.new(1, -500, 1, -0), "InOut", "Quart", 0.5, true, nil)
+		wait(0.6)
+		local closepressed = false
+		Notification.Title.Text = title
+		Notification.Text.Text = text
+		Notification:TweenPosition(UDim2.new(1, -500, 1, -100), "InOut", "Quart", 0.5, true, nil)
+		Notification.CloseButton.MouseButton1Click:Connect(function()
+			Notification:TweenPosition(UDim2.new(1, -500, 1, -0), "InOut", "Quart", 0.5, true, nil)
+			closepressed = true
+		end)
+		wait(5)
+		if LnotifyCount == notifyCount then
+			if closepressed == false then
+				Notification:TweenPosition(UDim2.new(1, -500, 1, -0), "InOut", "Quart", 0.5, true, nil)
+			end
+			notifyCount = 0
+		end
+	end)
+end
+
+Mouse.KeyDown:connect(function(Key)
+	if (Key==prefix) then
+		Holder.Cmdbar:CaptureFocus()
+		maximizeHolder()
+		if SettingsOpen == true then
+			wait(0.2)
+			Holder.Settings:TweenPosition(UDim2.new(0, 0, 0, 220), "InOut", "Quart", 0.2, true, nil)
+			SettingsOpen = false
+		end
+	end
+end)
+
+Holder.MouseEnter:Connect(function()
+	maximizeHolder()
+end)
+
+Holder.MouseLeave:Connect(function()
+	minimizeHolder()
+end)
+
+Holder.SettingsButton.MouseButton1Click:Connect(function()
+	if SettingsOpen == false then SettingsOpen = true
+		Holder.Settings:TweenPosition(UDim2.new(0, 0, 0, 45), "InOut", "Quart", 0.5, true, nil)
+	else SettingsOpen = false
+		Holder.Settings:TweenPosition(UDim2.new(0, 0, 0, 220), "InOut", "Quart", 0.5, true, nil)
+	end
+end)
+
+Holder.Settings.StayOpen.Button.On.MouseButton1Click:Connect(function()
+	if StayOpen == false then StayOpen = true
+		Holder.Settings.StayOpen.Button.On.BackgroundTransparency = 0
+	else StayOpen = false
+		Holder.Settings.StayOpen.Button.On.BackgroundTransparency = 1
+	end
+	updatesaves()
+end)
+
+KeybindsFrame.Close.MouseButton1Click:Connect(function()
+	enablebuttons()
+	KeybindsFrame:TweenPosition(UDim2.new(0, 0, 0, 175), "InOut", "Quart", 0.5, true, nil)
+end)
+
+Holder.Settings.Keybinds.Select.MouseButton1Click:Connect(function()
+	KeybindsFrame:TweenPosition(UDim2.new(0, 0, 0, 0), "InOut", "Quart", 0.5, true, nil)
+	wait(0.5)
+	disablebuttons()
+end)
+
+KeybindsFrame.Add.MouseButton1Click:Connect(function()
+	KeybindEditor:TweenPosition(UDim2.new(0.5, -180, 0.5, 0), "InOut", "Quart", 0.5, true, nil)
+end)
+
+KeybindsFrame.Delete.MouseButton1Click:Connect(function()
+	binds = {}
+	refreshbinds()
+	updatesaves()
+	notify('Keybinds Updated','Removed all keybinds')
+end)
+
+AliasesFrame.Close.MouseButton1Click:Connect(function()
+	enablebuttons()
+	AliasesFrame:TweenPosition(UDim2.new(0, 0, 0, 175), "InOut", "Quart", 0.5, true, nil)
+end)
+
+Settings.Aliases.Select.MouseButton1Click:Connect(function()
+	AliasesFrame:TweenPosition(UDim2.new(0, 0, 0, 0), "InOut", "Quart", 0.5, true, nil)
+	wait(0.5)
+	disablebuttons()
+end)
+
+local cmds={}
+local customAlias = {}
+AliasesFrame.Delete.MouseButton1Click:Connect(function()
+	customAlias = {}
+	aliases = {}
+	notify('Aliases Modified','Removed all aliases')
+	updatesaves()
+	refreshaliases()
+end)
+
+Holder.Settings.Prefix.PrefixBox.Changed:connect(function(property)
+	if property == "Text" then
+		prefix = Holder.Settings.Prefix.PrefixBox.Text
+		updatesaves()
+	end
+end)
+
+function dragGUI(gui)
+spawn(function()
+local UserInputService = game:GetService("UserInputService")
+local dragging
+local dragInput
+local dragStart
+local startPos
+local function update(input)
+    local delta = input.Position - dragStart
+	gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), "InOut", "Quart", 0.04, true, nil) 
+end
+gui.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = gui.Position
+        
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+gui.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+UserInputService.InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        update(input)
+    end
+end)
+end)
+end
+
+local CSP = Holder
+local frame = CSP:WaitForChild('CMDs')
+
+Match = function(name,str)
+	return name:lower():find(str:lower()) and true
+end
+
+canvasPos = nil
+IndexContents = function(str,bool,cmdbar,anim)
+	local content = frame:GetChildren()
+	if CMDsF.CanvasPosition.Y > 0 and #content == #CMDs then
+		canvasPos = CMDsF.CanvasPosition.Y
+	end
+	CMDsF.CanvasPosition = Vector2.new(0,0)
+	local Index,SizeY = 0,0
+	local indexnum = 0
+	for i,v in next, frame:GetChildren() do
+		if bool then
+			if Match(v.Text,str) then
+				indexnum = indexnum + 1
+				Index = Index + 1
+				v.Position = UDim2.new(0,10,0,Index*v.AbsoluteSize.Y-v.AbsoluteSize.Y)
+				v.Visible = true
+				SizeY = SizeY + v.AbsoluteSize.Y
+				frame.CanvasSize = UDim2.new(0,0,0,SizeY)
+			else
+				v.Visible = false
+			end
+		else
+			v.Visible = true
+			SizeY = SizeY + v.AbsoluteSize.Y
+			frame.CanvasSize = UDim2.new(0,0,0,SizeY)
+		end
+	end
+	if not anim then
+		if indexnum == 0 or string.find(str, " ") then
+			if not cmdbar then
+				minimizeHolder()
+			elseif cmdbar then
+				cmdbarHolder()
+			end
+		else
+			maximizeHolder()
+		end
+	else
+		minimizeHolder()
+	end
+end
+
+local chatbox = Players.LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
+chatbox.Changed:connect(function(property)
+	if property == "Text" then
+		if Players.LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar.Text:lower():sub(1,1) == prefix then
+			maximizeHolder()
+			if SettingsOpen == true then
+			wait(0.2)
+			Holder.Settings:TweenPosition(UDim2.new(0, 0, 0, 220), "InOut", "Quart", 0.2, true, nil)
+			SettingsOpen = false
+			end
+			IndexContents(Players.LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar.Text:lower():sub(2),true) 
+		else
+			minimizeHolder()
+			if canvasPos ~= nil then
+				CMDsF.CanvasPosition = Vector2.new(0, canvasPos)
+			end
+		end
+	end
+end)
+
+CMDs = {
+	'rejoin',
+	'exit',
+	'serverinfo / info',
+	'explorer / dex',
+	'remotespy',
+	'breakloops / break (cmd loops)',
+	'',
+	'addalias [cmd] [alias]',
+	'removealias [alias]',
+	'clraliases',
+	'',
+	'noclip',
+	'clip',
+	'fly',
+	'unfly',
+	'flyspeed [num]',
+	'float',
+	'unfloat',
+	'',
+	'savepos / spos [name]',
+	'deletepos / dpos [name]',
+	'loadpos / lpos [name]',
+	'',
+	'spam [text]',
+	'unspam',
+	'pmspam [plr] [text]',
+	'unpmspam [plr]',
+	'',
+	'esp [plr]',
+	'noesp [plr]',
+	'spectate / view [plr]',
+	'unspectate / unview',
+	'freecam / fc',
+	'unfreecam / unfc',
+	'freecamspeed / fcspeed [num]',
+	'firstp',
+	'thirdp',
+	'maxzoom [num]',
+	'fixcam',
+	'',
+	'btools (CLIENT)',
+	'f3x (CLIENT)',
+	'delete [part name] (CLIENT)',
+	'deleteclass / dc [class name] (CLIENT)',
+	'lockworkspace / lockws',
+	'unlockworkspace / unlockws',
+	'',
+	'age [plr]',
+	'os [plr]',
+	'copytools [plr]',
+	'bang [plr]',
+	'fekill [plr] (need a tool)',
+	'orbit [plr]',
+	'unorbit [plr]',
+	'loopoof',
+	'unloopoof',
+	'',
+	'respawn',
+	'refresh / re',
+	'god',
+	'invisible / invis',
+	'weaken',
+	'strengthen',
+	'unweaken',
+	'unstrengthen',
+	'speed / ws [num]',
+	'hipheight / hheight [num]',
+	'jumppower / grav [num]',
+	'sit',
+	'team [team name] (CLIENT)',
+	'',
+	'goto [plr]',
+	'loopgoto [plr]',
+	'unloopgoto [plr]',
+	'loopbring [plr] (CLIENT)',
+	'unloopbring [plr]',
+	'freeze / fr [plr] (CLIENT)',
+	'thaw / unfr [plr]',
+	'unloopgoto [plr]',
+	'tppos [coordinate]',
+	'offset [coordinate]',
+	'spawnpoint / spawn',
+	'nospawnpoint / nospawn',
+	'',
+	'animation / anim [anim] [speed]',
+	'dance',
+	'spasm',
+	'spinhats',
+	'unspinhats',
+	'noarms',
+	'nolegs',
+	'nolimbs',
+	'naked',
+	'',
+	'tools',
+	'keeptools / ktools',
+	'nokeeptools / noktools',
+	'notools/removetools',
+	'grabtools',
+	'ungrabtools',
+	'givetools [plr]',
+	'copytools [plr]',
+}
+
+for i = 1, #CMDs do
+	local newcmd = Holder.Example:Clone()
+	newcmd.Parent = Holder.CMDs
+	newcmd.Visible = false
+	newcmd.Text = "" .. CMDs[i]
+	newcmd.Name = 'CMD'
+end
+
+wait(0.5)
+Logo:TweenSizeAndPosition(UDim2.new(0,175,0,175),UDim2.new(0,37,0,45), "Out", "Quart", 0.5)
+wait(1.5)
+for i=1,10 do
+	Logo.ImageTransparency = Logo.ImageTransparency+0.1
+	wait()
+end
+Logo:Destroy()
+minimizeHolder()
+IndexContents('',true)
+
+function FindInTable(Table, Name)
+	for i,v in pairs(Table) do
+		if v == Name then
+			return true
+		end
+	end
+	return false
+end
+
+
+function GetInTable(Table, Name)
+	for i = 1, #Table do
+		if Table[i] == Name then
+			return i
+		end
+	end
+	return false
+end
+
+function respawn(plr)
+	local M = Instance.new('Model', workspace) M.Name = 'respawn_iy'
+	local H = Instance.new('Humanoid', M)
+	local T = Instance.new('Part', M) T.Name = 'Torso' T.CanCollide = false T.Transparency = 1
+	plr.Character = M
+end
+
+function refresh(plr)
+	spawn(function()
+		local rpos = plr.Character.HumanoidRootPart.Position
+		wait(0.1)
+		plr.Character:Destroy()
+		respawn(plr)
+		wait(0.1)
+		repeat wait() until plr.Character ~= nil and plr.Character:FindFirstChild('HumanoidRootPart')
+		plr.Character:MoveTo(rpos)
+	end)
+end
+
+Players.LocalPlayer.CharacterAdded:Connect(function()
+	wait(0.3)
+	if spawnpoint and spawnpos ~= nil then
+		Players.LocalPlayer.Character.HumanoidRootPart.CFrame = spawnpos
+	end
+end)
+
+local std={}
+std.inTable=function(tbl,val)
+    if tbl==nil then return false end
+    for _,v in pairs(tbl)do
+        if v==val then return true end
+    end 
+	return false
+end
+
+function getstring(lower, start)
+	local AA = '' for i,v in pairs(cargs) do
+		if i > start then
+			if AA ~= '' then
+				AA = AA .. ' ' .. v
+			else
+				AA = AA .. v
+			end
+		end
+	end
+	if not lower then
+		return AA
+	else
+		return string.lower(AA)
+	end
+end
+
+local findCmd=function(cmd_name)
+	for i,v in pairs(cmds)do
+		if v.NAME:lower()==cmd_name:lower() or std.inTable(v.ALIAS,cmd_name:lower()) then
+			return v
+		end
+	end
+	return customAlias[cmd_name:lower()]
+end
+
+local function splitString(str,delim)
+	local broken = {}
+	if delim == nil then delim = "," end
+		for w in string.gmatch(str,"[^"..delim.."]+") do
+			table.insert(broken,w)
+		end
+	return broken
+end
+
+local historyCount = 0
+local cmdHistory = {}
+local split=" "
+lastBreakTime = 0
+local function execCmd(cmdStr,speaker)
+	spawn(function()
+    	local rawCmdStr = cmdStr
+  	  cmdStr = string.gsub(cmdStr,"\\\\","%%BackSlash%%")
+  	  local commandsToRun = splitString(cmdStr,"\\")
+  	  for i,v in pairs(commandsToRun) do
+  	      v = string.gsub(v,"%%BackSlash%%","\\")
+  	      local x,y,num = v:find("^(%d+)%^")
+  	      local cmdDelay = 0
+  	      if num then
+  	          v = v:sub(y+1)
+  	          local x,y,del = v:find("^([%d%.]+)%^")
+  	          if del then
+  	              v = v:sub(y+1)
+  	              cmdDelay = tonumber(del) or 0
+  	          end
+  	      end
+  	      num = tonumber(num or 1)
+  	      local args = splitString(v,split)
+  	      local cmd = findCmd(args[1])
+  	      if cmd then
+  	          table.remove(args,1)
+  	          cargs = args
+  	          if speaker == Players.LocalPlayer then
+  	              if cmdHistory[1] ~= rawCmdStr then table.insert(cmdHistory,1,rawCmdStr) end
+  	          end
+  	          if #cmdHistory > 20 then table.remove(cmdHistory) end
+  	          local cmdStartTime = tick()
+  	          for rep = 1,num do
+  	              if lastBreakTime > cmdStartTime then break end
+    	            pcall(function()
+    	                cmd.FUNC(args, speaker)
+    	            end)
+    	            if cmdDelay ~= 0 then wait(cmdDelay) end
+    	        end
+    	    end
+    	end
+	end)	
+end	
+
+function addcmd(name,desc,alias,func)
+    cmds[#cmds+1]=
+    {
+        NAME=name;
+        DESC=desc;
+        ALIAS=alias;
+        FUNC=func;
+    }
+end
+
+function addbind(cmd,key)
+    binds[#binds+1]=
+    {
+        COMMAND=cmd;
+        KEY=key;
+    }
+end
+
+local SpecialPlayerCases = {
+	["all"] = function(speaker)return game:GetService("Players"):GetPlayers() end,
+	["others"] = function(speaker)
+		local plrs = {}
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if v ~= speaker then
+				table.insert(plrs,v)
+			end
+		end
+		return plrs
+	 end,
+	["me"] = function(speaker)return {speaker} end,
+	["#(%d+)"] = function(speaker,args,currentList)
+		local returns = {}
+		local randAmount = tonumber(args[1])
+		local players = {unpack(currentList)}
+		for i = 1,randAmount do
+			if #players == 0 then break end
+			local randIndex = math.random(1,#players)
+			table.insert(returns,players[randIndex])
+			table.remove(players,randIndex)
+		end
+		return returns
+	end,
+	["random"] = function(speaker,args,currentList)
+		local players = currentList
+		return {players[math.random(1,#players)]}
+	end,
+	["%%(.+)"] = function(speaker,args)
+		local returns = {}
+		local team = args[1]
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Team and string.sub(string.lower(plr.Team.Name),1,#team) == string.lower(team) then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["allies"] = function(speaker)
+		local returns = {}
+		local team = speaker.Team
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Team == team then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["enemies"] = function(speaker)
+		local returns = {}
+		local team = speaker.Team
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Team ~= team then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["team"] = function(speaker)
+		local returns = {}
+		local team = speaker.Team
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Team == team then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["nonteam"] = function(speaker)
+		local returns = {}
+		local team = speaker.Team
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Team ~= team then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["friends"] = function(speaker,args)
+		local returns = {}
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr:IsFriendsWith(speaker.UserId) and plr ~= speaker then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["nonfriends"] = function(speaker,args)
+		local returns = {}
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if not plr:IsFriendsWith(speaker.UserId) and plr ~= speaker then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["guests"] = function(speaker,args)
+		local returns = {}
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Guest then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["bacons"] = function(speaker,args)
+		local returns = {}
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Character:FindFirstChild('Pal Hair') or plr.Character:FindFirstChild('Kate Hair') then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["age(%d+)"] = function(speaker,args)
+		local returns = {}
+		local age = tonumber(args[1])
+		if not age == nil then return end
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+		if plr.AccountAge <= age then
+				table.insert(returns,plr)
+			end
+		end
+		return returns
+	end,
+	["rad(%d+)"] = function(speaker,args)
+		local returns = {}
+		local radius = tonumber(args[1])
+		local speakerChar = speaker.Character
+		if not speakerChar or not speakerChar:FindFirstChild("HumanoidRootPart") then return end
+		for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
+			if plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
+				local magnitude = (plr.Character:FindFirstChild("HumanoidRootPart").Position-speakerChar.HumanoidRootPart.Position).magnitude
+				if magnitude <= radius then table.insert(returns,plr) end
+			end
+		end
+		return returns
+	end
+}
+
+local function toTokens(str)
+	local tokens = {}
+	for op,name in string.gmatch(str,"([+-])([^+-]+)") do
+		table.insert(tokens,{Operator = op,Name = name})
+	end
+	return tokens
+end
+
+local function onlyIncludeInTable(tab,matches)
+	local matchTable = {}
+	local resultTable = {}
+	for i,v in pairs(matches) do matchTable[v.Name] = true end
+	for i,v in pairs(tab) do if matchTable[v.Name] then table.insert(resultTable,v) end end
+	return resultTable
+end
+
+local function removeTableMatches(tab,matches)
+	local matchTable = {}
+	local resultTable = {}
+	for i,v in pairs(matches) do matchTable[v.Name] = true end
+	for i,v in pairs(tab) do if not matchTable[v.Name] then table.insert(resultTable,v) end end
+	return resultTable
+end
+
+local function getPlayersByName(name)
+	local found = {}
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do
+		if string.sub(string.lower(v.Name),1,#name) == string.lower(name) then
+			table.insert(found,v)
+		end
+	end
+	return found
+end
+
+local function getPlayer(list,speaker)
+	if list == nil then return {speaker.Name} end
+	local nameList = splitString(list,",")
+	
+	local foundList = {}
+	
+	for _,name in pairs(nameList) do
+		if string.sub(name,1,1) ~= "+" and string.sub(name,1,1) ~= "-" then name = "+"..name end
+		local tokens = toTokens(name)
+		local initialPlayers = game:GetService("Players"):GetPlayers()
+		
+		for i,v in pairs(tokens) do
+			if v.Operator == "+" then
+				local tokenContent = v.Name
+				local foundCase = false
+				for regex,case in pairs(SpecialPlayerCases) do
+					local matches = {string.match(tokenContent,"^"..regex.."$")}
+					if #matches > 0 then
+						foundCase = true
+						initialPlayers = onlyIncludeInTable(initialPlayers,case(speaker,matches,initialPlayers))
+					end
+				end
+				if not foundCase then
+					initialPlayers = onlyIncludeInTable(initialPlayers,getPlayersByName(tokenContent))
+				end
+			else
+				local tokenContent = v.Name
+				local foundCase = false
+				for regex,case in pairs(SpecialPlayerCases) do
+					local matches = {string.match(tokenContent,"^"..regex.."$")}
+					if #matches > 0 then
+						foundCase = true
+						initialPlayers = removeTableMatches(initialPlayers,case(speaker,matches,initialPlayers))
+					end
+				end
+				if not foundCase then
+					initialPlayers = removeTableMatches(initialPlayers,getPlayersByName(tokenContent))
+				end
+			end
+		end
+		
+		for i,v in pairs(initialPlayers) do table.insert(foundList,v) end
+	end
+	
+	local foundNames = {}
+	for i,v in pairs(foundList) do table.insert(foundNames,v.Name) end
+	
+	return foundNames
+end
+
+local getprfx=function(strn)
+    if strn:sub(1,string.len(prefix))==prefix then return{'cmd',string.len(prefix)+1}
+    end return
+end
+
+function do_exec(str, plr)
+	str = str:gsub('/e ', '')
+	local t = getprfx(str)
+	if not t then return end
+	str = str:sub(t[2])
+	if t[1]=='cmd' then
+		execCmd(str, plr)
+		IndexContents('',true,false,true)
+		if canvasPos ~= nil then
+			CMDsF.CanvasPosition = Vector2.new(0, canvasPos)
+		end
+	end
+end
+
+
+Players.LocalPlayer.Chatted:connect(function(message)
+	do_exec(message, Players.LocalPlayer)
+end)
+
+Holder.Cmdbar.Changed:connect(function(property)
+	if property == "Text" and Holder.Cmdbar:IsFocused() then
+		IndexContents(Holder.Cmdbar.Text,true,true)
+	end
+end)
+
+Holder.Cmdbar.FocusLost:connect(function(enterpressed)
+	if enterpressed then
+		execCmd(Holder.Cmdbar.Text,Players.LocalPlayer)
+	end
+	Holder.Cmdbar.Text = "Command Bar"
+	IndexContents('',true,false,true)
+	if canvasPos ~= nil then
+		CMDsF.CanvasPosition = Vector2.new(0, canvasPos)
+	end
+end)
+
+Holder.Cmdbar.Focused:Connect(function() historyCount = 0 end)
+game:GetService("UserInputService").InputBegan:Connect(function(input)
+    if not Holder.Cmdbar:IsFocused() then return end
+    if input.KeyCode == Enum.KeyCode.Up then
+        historyCount = historyCount + 1
+        if historyCount > #cmdHistory then historyCount = #cmdHistory end
+        Holder.Cmdbar.Text = cmdHistory[historyCount] or ""
+    elseif input.KeyCode == Enum.KeyCode.Down then
+        historyCount = historyCount - 1
+        if historyCount < 1 then historyCount = 1 end
+        Holder.Cmdbar.Text = cmdHistory[historyCount] or ""
+    end
+end)
+
+function isNumber(str)
+	return tonumber(str) ~= nil
+end
+
+local UserInputService = game:GetService("UserInputService")
+bindsGUI = KeybindEditor
+awaitingInput = false
+keySelected = false
+
+function refreshbinds()
+	if Holder_2 then
+		Holder_2:ClearAllChildren()
+		Holder_2.CanvasSize = UDim2.new(0, 0, 0, 10)
+		for i = 1, #binds do
+			local YSize = 25
+			local Position = ((i * YSize) - YSize)
+			local newbind = Example_2:Clone()
+			newbind.Parent = Holder_2
+			newbind.Visible = true
+			newbind.Position = UDim2.new(0,0,0, Position + 5)
+			local input = tostring(binds[i].KEY)
+			local key
+			if input == 'RightClick' or input == 'LeftClick' then
+				key = input
+			else
+				key = input:sub(14)
+			end
+			newbind.Text.Text = key.." > "..binds[i].COMMAND
+			Holder_2.CanvasSize = UDim2.new(0,0,0, Position + 30)
+			newbind.Text.Delete.MouseButton1Click:Connect(function()
+				execCmd('unkeybind '..binds[i].COMMAND..' '..binds[i].KEY)
+			end)
+		end
+	end
+end
+
+refreshbinds()
+
+function refreshaliases()
+	if Holder_3 then
+		Holder_3:ClearAllChildren()
+		Holder_3.CanvasSize = UDim2.new(0, 0, 0, 10)
+		for i = 1, #aliases do
+			local YSize = 25
+			local Position = ((i * YSize) - YSize)
+			local newbind = Example_3:Clone()
+			newbind.Parent = Holder_3
+			newbind.Visible = true
+			newbind.Position = UDim2.new(0,0,0, Position + 5)
+			newbind.Text.Text = aliases[i].CMD.." > "..aliases[i].ALIAS
+			Holder_3.CanvasSize = UDim2.new(0,0,0, Position + 30)
+			newbind.Text.Delete.MouseButton1Click:Connect(function()
+				execCmd('removealias '..aliases[i].ALIAS)
+			end)
+		end
+	end
+end
+
+BindTo.MouseButton1Click:Connect(function()
+	awaitingInput = true
+	BindTo.Text = 'Press something'
+end)
+
+bindsGUI.Add.MouseButton1Click:Connect(function()
+	if keySelected then
+		addbind(bindsGUI.Cmdbar.Text,keyPressed)
+		refreshbinds()
+		updatesaves()
+		if keyPressed == 'RightClick' or keyPressed == 'LeftClick' then
+			notify('Keybinds Updated','Binded '..keyPressed..' to '..bindsGUI.Cmdbar.Text)
+		else
+			notify('Keybinds Updated','Binded '..keyPressed:sub(14)..' to '..bindsGUI.Cmdbar.Text)
+		end
+	end
+end)
+
+bindsGUI.CloseButton.MouseButton1Click:Connect(function()
+	Cmdbar.Text = 'Command'
+	BindTo.Text = 'Click to bind'
+	keySelected = false
+	KeybindEditor:TweenPosition(UDim2.new(0.5, -180, 0.5, 500), "InOut", "Quart", 0.5, true, nil)
+end)
+
+local function onInputBegan(input,gameProcessed)
+	if awaitingInput then
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			keyPressed = tostring(input.KeyCode)
+			BindTo.Text = keyPressed:sub(14)
+		elseif input.UserInputType == Enum.UserInputType.MouseButton1 then
+			keyPressed = 'LeftClick'
+			BindTo.Text = 'LeftClick'
+		elseif input.UserInputType == Enum.UserInputType.MouseButton2 then
+			keyPressed = 'RightClick'
+			BindTo.Text = 'RightClick'
+		end
+		awaitingInput = false
+		keySelected = true
+	end
+	if not gameProcessed and #binds > 0 then
+		for i,v in pairs(binds)do
+		if input.UserInputType == Enum.UserInputType.Keyboard and v.KEY:lower()==tostring(input.KeyCode):lower() then
+			execCmd(v.COMMAND)
+		elseif input.UserInputType == Enum.UserInputType.MouseButton1 and v.KEY:lower()=='leftclick' then
+			execCmd(v.COMMAND)
+		elseif input.UserInputType == Enum.UserInputType.MouseButton2 and v.KEY:lower()=='rightclick' then
+			execCmd(v.COMMAND)
+		end
+	end
+	end
+end
+ 
+UserInputService.InputBegan:connect(onInputBegan)
+
+game:GetService("RunService").RenderStepped:Connect(function()
+	if r15noclip then
+		if Players.LocalPlayer.Character:FindFirstChild('Humanoid') then
+			Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end
+end)
+
+game:GetService('RunService').Stepped:connect(function()
+	if bangplr then
+		Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[bangplr].Character.HumanoidRootPart.CFrame
+	end
+	if spinenabled then
+		pcall(function()
+			spinning.Position = Players.LocalPlayer.Character.Head.Position
+		end)
+	end
+end)
+
+KeybindEditor.Toggles.Fly.Select.MouseButton1Click:Connect(function()
+	if keySelected then
+		addbind('togglefly',keyPressed)
+		refreshbinds()
+		updatesaves()
+		if keyPressed == 'RightClick' or keyPressed == 'LeftClick' then
+			notify('Keybinds Updated','Binded '..keyPressed..' to toggle fly')
+		else
+			notify('Keybinds Updated','Binded '..keyPressed:sub(14)..' to toggle fly')
+		end
+	end
+end)
+
+KeybindEditor.Toggles.Noclip.Select.MouseButton1Click:Connect(function()
+	if keySelected then
+		addbind('togglenoclip',keyPressed)
+		refreshbinds()
+		updatesaves()
+		if keyPressed == 'RightClick' or keyPressed == 'LeftClick' then
+			notify('Keybinds Updated','Binded '..keyPressed..' to toggle noclip')
+		else
+			notify('Keybinds Updated','Binded '..keyPressed:sub(14)..' to toggle noclip')
+		end
+	end
+end)
+
+KeybindEditor.Toggles.Float.Select.MouseButton1Click:Connect(function()
+	if keySelected then
+		addbind('togglefloat',keyPressed)
+		refreshbinds()
+		updatesaves()
+		if keyPressed == 'RightClick' or keyPressed == 'LeftClick' then
+			notify('Keybinds Updated','Binded '..keyPressed..' to toggle float')
+		else
+			notify('Keybinds Updated','Binded '..keyPressed:sub(14)..' to toggle float')
+		end
+	end
+end)
+
+addcmd('addalias','Adds an alias to a command',{},
+function(args,speaker)
+	if #args < 2 then return end
+	local cmd = string.lower(args[1])
+	local alias = string.lower(args[2])
+	for i,v in pairs(cmds) do
+		if v.NAME:lower()==cmd or std.inTable(v.ALIAS,cmd) then
+			customAlias[alias] = v
+			aliases[#aliases + 1] = {CMD = cmd, ALIAS = alias}
+			notify('Aliases Modified',"Added "..alias.." as an alias to "..cmd)
+			updatesaves()
+			refreshaliases()
+			break
+		end
+	end
+end)
+
+addcmd('loadsavedaliases','dab',{},
+function(args,speaker)
+    if #args < 2 then return end
+    local cmd = string.lower(args[1])
+    local alias = string.lower(args[2])
+    for i,v in pairs(cmds) do
+        if v.NAME:lower()==cmd or std.inTable(v.ALIAS,cmd) then
+            customAlias[alias] = v
+			refreshaliases()
+            break
+        end
+    end
+end)
+
+if aliases then
+	for i = 1, #aliases do
+		execCmd('loadsavedaliases '..aliases[i].CMD..' '..aliases[i].ALIAS)
+	end
+end
+
+addcmd('removealias','Removes a custom alias',{},
+function(args,speaker)
+	if #args < 1 then return end
+	local alias = string.lower(args[1])
+	if customAlias[alias] then
+		local cmd = customAlias[alias].NAME
+		customAlias[alias] = nil
+		for i,v in pairs(aliases) do
+			if v.ALIAS == tostring(alias) then
+				table.remove(aliases, i)
+			end
+		end
+		notify('Aliases Modified',"Removed the alias "..alias.." from "..cmd)
+		updatesaves()
+		refreshaliases()
+	end
+end)
+
+addcmd('clraliases','Removes all custom aliases',{},
+function(args,speaker)
+	customAlias = {}
+	aliases = {}
+	notify('Aliases Modified','Removed all aliases')
+	updatesaves()
+	refreshaliases()
+end)
+
+addcmd('serverinfo', 'Gives you info about the server',{'info','sinfo'},
+function(args, speaker)
+	local Sinfo = Instance.new("ScreenGui")
+	local drag = Instance.new("Frame")
+	local PromptDialog = Instance.new("Frame")
+	local shadow = Instance.new("Frame")
+	local PopupText = Instance.new("TextLabel")
+	local Exit = Instance.new("TextButton")
+	local ContainerFrame = Instance.new("Frame")
+	local TextLabel = Instance.new("TextLabel")
+	local TextLabel2 = Instance.new("TextLabel")
+	local TextLabel3 = Instance.new("TextLabel")
+	local Time = Instance.new("TextLabel")
+	local appearance = Instance.new("TextLabel")
+	local fe = Instance.new("TextLabel")
+	local maxplayers = Instance.new("TextLabel")
+	local name = Instance.new("TextLabel")
+	local placeid = Instance.new("TextLabel")
+	local playerid = Instance.new("TextLabel")
+	local players = Instance.new("TextLabel")
+	Sinfo.Name = "Sinfo"
+	Sinfo.Parent = game:GetService("CoreGui").RobloxGui
+	drag.Name = "drag"
+	drag.Parent = Sinfo
+	drag.Active = true
+	drag.BackgroundColor3 = Color3.new(1, 1, 1)
+	drag.BackgroundTransparency = 1
+	dragGUI(drag)
+	drag.Position = UDim2.new(0.5, -150, 0, -400)
+	drag.Size = UDim2.new(0, 290, 0, 30)
+	PromptDialog.Name = "PromptDialog"
+	PromptDialog.Parent = drag
+	PromptDialog.BackgroundColor3 = Color3.new(0, 0, 0)
+	PromptDialog.BackgroundTransparency = 1
+	PromptDialog.BorderSizePixel = 0
+	PromptDialog.Position = UDim2.new(0, -10, 0, 0)
+	PromptDialog.Size = UDim2.new(0, 310, 0, 300)
+	PromptDialog.ZIndex = 8
+	shadow.Name = "shadow"
+	shadow.Parent = PromptDialog
+	shadow.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+	shadow.BackgroundTransparency = 0.30000001192093
+	shadow.BorderColor3 = Color3.new(0, 0, 0)
+	shadow.BorderSizePixel = 0
+	shadow.Position = UDim2.new(0.0322580636, 0, 0.00999999978, 0)
+	shadow.Size = UDim2.new(0, 290, 0, 26)
+	PopupText.Name = "PopupText"
+	PopupText.Parent = shadow
+	PopupText.BackgroundTransparency = 1
+	PopupText.Position = UDim2.new(0, 8, 0, -3)
+	PopupText.Size = UDim2.new(1, -16, 0.538461566, 0)
+	PopupText.ZIndex = 110
+	PopupText.Font = Enum.Font.SourceSansBold
+	PopupText.FontSize = Enum.FontSize.Size28
+	PopupText.Text = "Server"
+	PopupText.TextColor3 = Color3.new(0.97, 0.97, 0.97)
+	PopupText.TextStrokeTransparency = 0
+	PopupText.TextWrapped = true
+	PopupText.TextYAlignment = Enum.TextYAlignment.Top
+	Exit.Name = "Exit"
+	Exit.Parent = shadow
+	Exit.BackgroundColor3 = Color3.new(1, 0, 0)
+	Exit.BackgroundTransparency = 0.30000001192093
+	Exit.BorderColor3 = Color3.new(1, 0, 0)
+	Exit.BorderSizePixel = 0
+	Exit.Position = UDim2.new(0, 267, 0, 3)
+	Exit.Size = UDim2.new(0, 20, 0, 20)
+	Exit.FontSize = Enum.FontSize.Size14
+	Exit.Text = ""
+	ContainerFrame.Name = "ContainerFrame"
+	ContainerFrame.Parent = PromptDialog
+	ContainerFrame.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+	ContainerFrame.BackgroundTransparency = 0.5
+	ContainerFrame.BorderColor3 = Color3.new(0, 0, 0)
+	ContainerFrame.BorderSizePixel = 0
+	ContainerFrame.Position = UDim2.new(0, 10, 0, 29)
+	ContainerFrame.Size = UDim2.new(0.935483873, 0, 0.806666672, 0)
+	ContainerFrame.ZIndex = 5
+	TextLabel.Name = "Text Label"
+	TextLabel.Parent = ContainerFrame
+	TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel.BackgroundTransparency = 1
+	TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+	TextLabel.Position = UDim2.new(0, 10, 0, 70)
+	TextLabel.Size = UDim2.new(0, 100, 0, 20)
+	TextLabel.ZIndex = 10
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.FontSize = Enum.FontSize.Size24
+	TextLabel.Text = "Run Time:"
+	TextLabel.TextColor3 = Color3.new(1, 1, 1)
+	TextLabel.TextStrokeTransparency = 0
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel2.Name = "Text Label2"
+	TextLabel2.Parent = ContainerFrame
+	TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel2.BackgroundTransparency = 1
+	TextLabel2.BorderColor3 = Color3.new(0, 0, 0)
+	TextLabel2.Position = UDim2.new(0, 10, 0, 120)
+	TextLabel2.Size = UDim2.new(0, 100, 0, 20)
+	TextLabel2.ZIndex = 10
+	TextLabel2.Font = Enum.Font.SourceSans
+	TextLabel2.FontSize = Enum.FontSize.Size24
+	TextLabel2.Text = "Statistics:"
+	TextLabel2.TextColor3 = Color3.new(1, 1, 1)
+	TextLabel2.TextStrokeTransparency = 0
+	TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel3.Name = "Text Label3"
+	TextLabel3.Parent = ContainerFrame
+	TextLabel3.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel3.BackgroundTransparency = 1
+	TextLabel3.BorderColor3 = Color3.new(0, 0, 0)
+	TextLabel3.Position = UDim2.new(0, 10, 0, 0)
+	TextLabel3.Size = UDim2.new(0, 100, 0, 20)
+	TextLabel3.ZIndex = 10
+	TextLabel3.Font = Enum.Font.SourceSans
+	TextLabel3.FontSize = Enum.FontSize.Size24
+	TextLabel3.Text = "Local Player:"
+	TextLabel3.TextColor3 = Color3.new(1, 1, 1)
+	TextLabel3.TextStrokeTransparency = 0
+	TextLabel3.TextXAlignment = Enum.TextXAlignment.Left
+	Time.Name = "Time"
+	Time.Parent = ContainerFrame
+	Time.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	Time.BackgroundTransparency = 1
+	Time.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	Time.Position = UDim2.new(0, 10, 0, 90)
+	Time.Size = UDim2.new(0, 100, 0, 20)
+	Time.ZIndex = 100
+	Time.Font = Enum.Font.ArialBold
+	Time.FontSize = Enum.FontSize.Size14
+	Time.Text = "Loading..."
+	Time.TextColor3 = Color3.new(1, 1, 1)
+	Time.TextStrokeTransparency = 0
+	Time.TextXAlignment = Enum.TextXAlignment.Left
+	appearance.Name = "appearance"
+	appearance.Parent = ContainerFrame
+	appearance.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	appearance.BackgroundTransparency = 1
+	appearance.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	appearance.Position = UDim2.new(0, 10, 0, 40)
+	appearance.Size = UDim2.new(0, 100, 0, 20)
+	appearance.ZIndex = 10
+	appearance.Font = Enum.Font.ArialBold
+	appearance.FontSize = Enum.FontSize.Size14
+	appearance.Text = "Appearance: Loading..."
+	appearance.TextColor3 = Color3.new(1, 1, 1)
+	appearance.TextStrokeTransparency = 0
+	appearance.TextXAlignment = Enum.TextXAlignment.Left
+	fe.Name = "fe"
+	fe.Parent = ContainerFrame
+	fe.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	fe.BackgroundTransparency = 1
+	fe.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	fe.Position = UDim2.new(0, 10, 0, 200)
+	fe.Size = UDim2.new(0, 100, 0, 20)
+	fe.ZIndex = 10
+	fe.Font = Enum.Font.ArialBold
+	fe.FontSize = Enum.FontSize.Size14
+	fe.Text = "Loading..."
+	fe.TextColor3 = Color3.new(1, 1, 1)
+	fe.TextStrokeTransparency = 0
+	fe.TextXAlignment = Enum.TextXAlignment.Left
+	maxplayers.Name = "maxplayers"
+	maxplayers.Parent = ContainerFrame
+	maxplayers.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	maxplayers.BackgroundTransparency = 1
+	maxplayers.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	maxplayers.Position = UDim2.new(0, 10, 0, 160)
+	maxplayers.Size = UDim2.new(0, 100, 0, 20)
+	maxplayers.ZIndex = 10
+	maxplayers.Font = Enum.Font.ArialBold
+	maxplayers.FontSize = Enum.FontSize.Size14
+	maxplayers.Text = "Loading..."
+	maxplayers.TextColor3 = Color3.new(1, 1, 1)
+	maxplayers.TextStrokeTransparency = 0
+	maxplayers.TextXAlignment = Enum.TextXAlignment.Left
+	name.Name = "name"
+	name.Parent = ContainerFrame
+	name.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	name.BackgroundTransparency = 1
+	name.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	name.Position = UDim2.new(0, 10, 0, 180)
+	name.Size = UDim2.new(0, 100, 0, 20)
+	name.ZIndex = 10
+	name.Font = Enum.Font.ArialBold
+	name.FontSize = Enum.FontSize.Size14
+	name.Text = "Place: Loading..."
+	name.TextColor3 = Color3.new(1, 1, 1)
+	name.TextStrokeTransparency = 0
+	name.TextXAlignment = Enum.TextXAlignment.Left
+	placeid.Name = "placeid"
+	placeid.Parent = ContainerFrame
+	placeid.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	placeid.BackgroundTransparency = 1
+	placeid.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	placeid.Position = UDim2.new(0, 10, 0, 220)
+	placeid.Size = UDim2.new(0, 100, 0, 20)
+	placeid.ZIndex = 10
+	placeid.Font = Enum.Font.ArialBold
+	placeid.FontSize = Enum.FontSize.Size14
+	placeid.Text = "Place ID: Loading..."
+	placeid.TextColor3 = Color3.new(1, 1, 1)
+	placeid.TextStrokeTransparency = 0
+	placeid.TextXAlignment = Enum.TextXAlignment.Left
+	playerid.Name = "playerid"
+	playerid.Parent = ContainerFrame
+	playerid.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	playerid.BackgroundTransparency = 1
+	playerid.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	playerid.Position = UDim2.new(0, 10, 0, 20)
+	playerid.Size = UDim2.new(0, 100, 0, 20)
+	playerid.ZIndex = 10
+	playerid.Font = Enum.Font.ArialBold
+	playerid.FontSize = Enum.FontSize.Size14
+	playerid.Text = "Player ID: Loading..."
+	playerid.TextColor3 = Color3.new(1, 1, 1)
+	playerid.TextStrokeTransparency = 0
+	playerid.TextXAlignment = Enum.TextXAlignment.Left
+	players.Name = "players"
+	players.Parent = ContainerFrame
+	players.BackgroundColor3 = Color3.new(0, 0.8, 1)
+	players.BackgroundTransparency = 1
+	players.BorderColor3 = Color3.new(0.2, 0.8, 0.2)
+	players.Position = UDim2.new(0, 10, 0, 140)
+	players.Size = UDim2.new(0, 100, 0, 20)
+	players.ZIndex = 100
+	players.Font = Enum.Font.ArialBold
+	players.FontSize = Enum.FontSize.Size14
+	players.Text = "Loading..."
+	players.TextColor3 = Color3.new(1, 1, 1)
+	players.TextStrokeTransparency = 0
+	players.TextXAlignment = Enum.TextXAlignment.Left
+	local SINFOGUI = ContainerFrame
+	drag:TweenPosition(UDim2.new(0.5, -150, 0, 100), "InOut", "Quart", 0.5, true, nil) 
+	wait(0.5)
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+	SINFOGUI.name.Text = "Place: " .. Asset.Name
+	Exit.MouseButton1Click:Connect(function()
+		drag:TweenPosition(UDim2.new(0.5, -150, 0, -400), "InOut", "Quart", 0.5, true, nil) 
+		wait(0.6)
+		Sinfo:Destroy()
+	end)
+	SINFOGUI.playerid.Text = "Player ID: " ..Players.LocalPlayer.UserId
+	if workspace.FilteringEnabled == true then
+		SINFOGUI.fe.Text = "Filtering Enabled"
+	elseif workspace.FilteringEnabled == false then
+		SINFOGUI.fe.Text = "Filtering Disabled"
+	end
+	SINFOGUI.maxplayers.Text = Players.MaxPlayers.. " Players Max"
+	SINFOGUI.placeid.Text = "Place ID: " ..game.PlaceId
+	repeat
+		players = Players:getPlayers()
+		SINFOGUI.players.Text = #players.. " Player(s)"
+		SINFOGUI.appearance.Text = "Appearance: " ..Players.LocalPlayer.CharacterAppearanceId
+		local seconds = math.floor(workspace.DistributedGameTime)
+		local minutes = math.floor(workspace.DistributedGameTime / 60)
+		local hours = math.floor(workspace.DistributedGameTime / 60 / 60)
+		local seconds = seconds - (minutes * 60)
+	local minutes = minutes - (hours * 60)
+		if hours < 1 then if minutes < 1 then
+			SINFOGUI.Time.Text = seconds .. " Second(s)" else
+			SINFOGUI.Time.Text = minutes .. " Minute(s), " .. seconds .. " Second(s)"
+		end
+		else
+			SINFOGUI.Time.Text = hours .. " Hour(s), " .. minutes .. " Minute(s), " .. seconds .. " Second(s)"
+		end
+		wait(1)
+	until SINFOGUI.Parent == nil
+end)
+
+addcmd('breakloops','Stops any cmd loops (;100^1^cmd)',{'break'},
+function(args, speaker)
+	lastBreakTime = tick()
+end)
+
+addcmd('rejoin','Makes you rejoin the game',{'rj'},
+function(args, speaker)
+	game:GetService('TeleportService'):Teleport(game.PlaceId)
+end)
+
+addcmd('exit','Kills roblox process',{},
+function(args, speaker)
+	game:shutdown() 
+end)
+
+runningnoclip = false
+Clip = true
+addcmd('noclip','Noclip through objects',{},
+function(args, speaker)
+notify('Noclip','Noclip enabled')
+Clip = false
+if Players.LocalPlayer.Character:FindFirstChild('Torso') then
+	wait(0.1)
+	if runningnoclip == false then runningnoclip = true
+	game:GetService('RunService').Stepped:connect(function ()
+	if Clip == false and Players.LocalPlayer.Character ~= nil then
+    for _, child in pairs( Players.LocalPlayer.Character:GetDescendants()) do
+	if child.ClassName == 'Part' and child.CanCollide == true then
+    child.CanCollide = false
+	end end end end) end
+else
+	r15noclip = true
+end
+end)
+
+addcmd('clip','Disables noclip',{},
+function(args, speaker)
+	notify('Noclip','Noclip disabled')
+	Clip = true
+	r15noclip = false
+	wait(0.1)
+	if Players.LocalPlayer.Character ~= nil then
+		Players.LocalPlayer.Character.Torso.CanCollide = true
+    	Players.LocalPlayer.Character.Head.CanCollide = true
+	end
+end)
+
+addcmd('togglenoclip','Toggles noclip',{},
+function(args, speaker)
+	if Clip then
+		execCmd('noclip')
+	else
+		execCmd('clip')
+	end
+end)
+
+FLYING = false
+iyflyspeed = 1
+function sFLY()
+	repeat wait() until Players.LocalPlayer and Players.LocalPlayer.Character and Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart') and Players.LocalPlayer.Character:FindFirstChild('Humanoid')
+	repeat wait() until Mouse
+	
+	local T = Players.LocalPlayer.Character.HumanoidRootPart
+	local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+	local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+	local SPEED = 0
+	
+	local function FLY()
+		FLYING = true
+		local BG = Instance.new('BodyGyro', T)
+		local BV = Instance.new('BodyVelocity', T)
+		BG.P = 9e4
+		BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		BG.cframe = T.CFrame
+		BV.velocity = Vector3.new(0, 0.1, 0)
+		BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		spawn(function()
+		repeat wait()
+		Players.LocalPlayer.Character.Humanoid.PlatformStand = true
+		if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+		SPEED = 50
+		elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+		SPEED = 0
+		end
+if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+else
+BV.velocity = Vector3.new(0, 0.1, 0)
+end
+	BG.cframe = workspace.CurrentCamera.CoordinateFrame
+			until not FLYING
+			CONTROL = {F = 0, B = 0, L = 0, R = 0}
+			lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+			SPEED = 0
+			BG:destroy()
+			BV:destroy()
+			Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+		end)
+	end
+	Mouse.KeyDown:connect(function(KEY)
+		if KEY:lower() == 'w' then
+			CONTROL.F = iyflyspeed
+		elseif KEY:lower() == 's' then
+			CONTROL.B = -iyflyspeed
+		elseif KEY:lower() == 'a' then
+			CONTROL.L = -iyflyspeed 
+		elseif KEY:lower() == 'd' then 
+			CONTROL.R = iyflyspeed
+		end
+	end)
+	Mouse.KeyUp:connect(function(KEY)
+		if KEY:lower() == 'w' then
+			CONTROL.F = 0
+		elseif KEY:lower() == 's' then
+			CONTROL.B = 0
+		elseif KEY:lower() == 'a' then
+			CONTROL.L = 0
+		elseif KEY:lower() == 'd' then
+			CONTROL.R = 0
+		end
+	end)
+	FLY()
+end
+
+function NOFLY()
+	FLYING = false
+	Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+end
+
+Players.LocalPlayer.CharacterAdded:Connect(function()
+	FLYING = false
+	Floating = false
+end)
+
+addcmd('fly','Makes you fly',{},
+function(args, speaker)
+	sFLY()
+end)
+
+addcmd('flyspeed','Set fly speed',{'flysp'},
+function(args, speaker)
+	if isNumber(args[1]) then
+		iyflyspeed = args[1]
+	end
+end)
+
+addcmd('unfly','Disables fly',{'nofly'},
+function(args, speaker)
+	NOFLY()
+end)
+
+addcmd('togglefly','Toggle fly',{},
+function(args, speaker)
+	if FLYING then
+		NOFLY()
+	else
+		sFLY()
+	end
+end)
+
+Floating = false
+addcmd('float', 'Makes you float',{},
+function(args,speaker)
+	Floating = true
+	local pchar = Players.LocalPlayer.Character
+	if pchar and not pchar:FindFirstChild("Float") then
+		spawn(function()
+			local Float = Instance.new('Part', pchar)
+			Float.Name = 'Float'
+			Float.Transparency = 1
+			Float.Size = Vector3.new(6,1,6)
+			Float.Anchored = true
+			Float.CFrame = pchar.HumanoidRootPart.CFrame * CFrame.new(0,-3.5,0)
+			notify('Float','Float Enabled')
+			spawn(function()
+				while wait(0.1) do
+					if pchar:FindFirstChild("Float") then
+						Float.CFrame = pchar.HumanoidRootPart.CFrame * CFrame.new(0,-3.5,0)
+					else
+						break
+					end
+				end
+			end)
+		end)
+	end
+end)
+
+addcmd('unfloat','Disables floating',{'nofloat'},
+function(args, speaker)
+	Floating = false
+	local pchar = Players.LocalPlayer.Character
+	notify('Float','Float Disabled')
+	if pchar:FindFirstChild("Float") then
+		pchar.Float:Destroy()
+	end
+end)
+
+addcmd('togglefloat','Toggles floating',{},
+function(args, speaker)
+	if Floating then
+		execCmd('unfloat')
+	else
+		execCmd('float')
+	end
+end)
+
+local WayPoints = {}
+addcmd("savepos","Sets a waypoint at your position",{'spos'},
+function(args, speaker)
+	local WPName = tostring(getstring(false, 0))
+	if speaker.Character:findFirstChild("HumanoidRootPart") then
+		notify('Modified Waypoints',"Created waypoint: "..getstring(false, 0))
+		local torso = speaker.Character:findFirstChild("HumanoidRootPart")
+		WayPoints[#WayPoints + 1] = {NAME = WPName, COORD = {math.floor(torso.Position.X), math.floor(torso.Position.Y), math.floor(torso.Position.Z)}}
+	end	
+end)
+
+addcmd("deletepos","Deletes a waypoint",{'dpos'},
+function(args, speaker)
+	for i,v in pairs(WayPoints) do
+		if v.NAME == tostring(getstring(false, 0)) then
+			notify('Modified Waypoints',"Deleted waypoint: " .. v.NAME)
+			table.remove(WayPoints, i)
+		end
+	end
+end)
+
+addcmd("loadpos","Teleports player to a waypoint",{'lpos'},
+function(args, speaker)
+	local WPName = tostring(getstring(false, 0))
+	if Players.LocalPlayer.Character then
+		for i,_ in pairs(WayPoints) do
+			local x = WayPoints[i].COORD[1]
+			local y = WayPoints[i].COORD[2]
+			local z = WayPoints[i].COORD[3]
+			if tostring(WayPoints[i].NAME) == tostring(WPName) then
+				Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+			end
+		end
+	end
+end)
+
+addcmd('esp', 'View a player and a players status',{},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		spawn(function()
+			for _, child in pairs( game["CoreGui"]:GetChildren()) do
+				if child.Name == Players[v].Name then
+					child:Destroy()
+				end
+			end
+			wait(0.5)
+			local m = game["Players"].LocalPlayer:GetMouse()
+			local rs = game:GetService("RunService").RenderStepped
+			local espplr = Players[v]
+			if espplr.Character and espplr.Name ~= Players.LocalPlayer.Name then
+				for b,n in pairs (espplr.Character:GetChildren()) do
+					if (n:IsA("BasePart")) then
+						local a = Instance.new("BoxHandleAdornment", game.CoreGui)
+						a.Name = espplr.Name
+						a.Adornee = n
+						a.AlwaysOnTop = true
+						a.ZIndex = 0
+						a.Size = n.Size
+						a.Transparency = 0.7
+						local resetting = false
+						if espplr.TeamColor == Players.LocalPlayer.TeamColor then
+							a.Color = BrickColor.new("Lime green")
+						else
+							a.Color = BrickColor.new("Really red")
+						end
+						if espplr.Character and espplr.Character:FindFirstChild('Head') then
+							local BillboardGui = Instance.new("BillboardGui", game.CoreGui)
+							local TextLabel = Instance.new("TextLabel")
+							BillboardGui.Adornee = espplr.Character.Head
+							BillboardGui.Name = espplr.Name
+							BillboardGui.Size = UDim2.new(0, 100, 0, 150)
+							BillboardGui.StudsOffset = Vector3.new(0, 1, 0)
+							BillboardGui.AlwaysOnTop = true
+							TextLabel.Parent = BillboardGui
+							TextLabel.BackgroundTransparency = 1
+							TextLabel.Position = UDim2.new(0, 0, 0, -50)
+							TextLabel.Size = UDim2.new(0, 100, 0, 100)
+							TextLabel.Font = Enum.Font.SourceSansSemibold
+							TextLabel.TextSize = 20
+							TextLabel.TextColor3 = Color3.new(1, 1, 1)
+							TextLabel.TextStrokeTransparency = 0
+							TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
+							espplr.Character:WaitForChild("Humanoid").Died:connect(function()
+								BillboardGui:Destroy() a:Destroy()
+							end)
+							Players.PlayerRemoving:connect(function(player)
+								if player.Name == espplr.Name then
+									BillboardGui:Destroy() a:Destroy()
+								end
+							end)
+							game:GetService("RunService").RenderStepped:Connect(function()
+								if espplr.Character ~= nil and espplr.Character.Parent ~= nil and espplr.Character:FindFirstChild('HumanoidRootPart') and espplr.Character:FindFirstChild('Humanoid') and game.CoreGui:FindFirstChild(espplr.Name) then
+									local pos = math.floor((Players.LocalPlayer.Character.HumanoidRootPart.Position - espplr.Character.HumanoidRootPart.Position).magnitude)
+									TextLabel.Text = 'Name: '..espplr.Name..' | Health: '..espplr.Character.Humanoid.Health..' | Studs: '..pos
+								else
+									BillboardGui:Destroy() a:Destroy()
+								end
+							end)
+						end
+					end
+				end
+			end
+		end)
+	end
+end)
+
+addcmd('noesp', 'Removes esp',{'unesp'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		spawn(function()
+			for _, child in pairs( game["CoreGui"]:GetChildren()) do
+				if child.Name == Players[v].Name then
+					child:Destroy()
+				end
+			end
+		end)
+	end
+end)
+
+addcmd('view', 'View a player',{'spectate'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players) do
+		workspace.CurrentCamera.CameraSubject = Players[v].Character
+		notify('Spectate','Viewing ' .. Players[v].Name)
+	end
+end)
+
+addcmd('unview', 'Stops viewing player',{'unspectate'},
+function()
+	workspace.CurrentCamera.CameraSubject = Players.LocalPlayer.Character
+	notify('Spectate','View turned off')
+end)
+
+addcmd('unkeybind','Unbind a key',{},
+function(args, speaker)
+	local cmd = tostring(args[1])
+	local key = tostring(args[2])
+	for i,v in pairs(binds) do
+		if v.COMMAND == cmd and v.KEY == key then
+			table.remove(binds, i)
+			refreshbinds()
+		end
+	end
+	updatesaves()
+	if key == 'RightClick' or key == 'LeftClick' then
+		notify('Keybinds Updated','Unbinded '..key..' from '..cmd)
+	else
+		notify('Keybinds Updated','Unbinded '..key:sub(14)..' from '..cmd)
+	end
+end)
+
+local fa = false
+local cam = workspace.CurrentCamera
+local cam1 = 0
+local cam2 = 0
+local cam3 = 0
+local k1 = false
+local k2 = false
+local k3 = false
+local k4 = false
+local k5 = false
+local k6 = false
+cs = 0.5
+function movecam()
+	local fc = game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC')
+	if fa == false then
+		repeat
+			if game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC') then
+				local fp = fc.Position
+				fc.CFrame = CFrame.new(Vector3.new(fp.X,fp.Y+cam3,fp.Z),cam.CFrame.p)*CFrame.new(cam2,0,cam1)
+				fa = true
+			end
+			game:GetService('RunService').RenderStepped:Wait()
+		until not game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC')
+		fa = false
+	end
+end
+function kp1(inputObject, gameProcessedEvent)
+	if not gameProcessedEvent and game:GetService('Players').LocalPlayer.Character and game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC') then
+		if inputObject.KeyCode == Enum.KeyCode.W or inputObject.KeyCode == Enum.KeyCode.Up then
+			k1 = true
+			cam1 = cs end
+		if inputObject.KeyCode == Enum.KeyCode.S or inputObject.KeyCode == Enum.KeyCode.Down then
+			k2 = true
+			cam1 = (cs*-1) end
+		if inputObject.KeyCode == Enum.KeyCode.A or inputObject.KeyCode == Enum.KeyCode.Left then
+			k3 = true
+			cam2 = cs end
+		if inputObject.KeyCode == Enum.KeyCode.D or inputObject.KeyCode == Enum.KeyCode.Right then
+			k4 = true
+			cam2 = (cs*-1) end
+		if inputObject.KeyCode == Enum.KeyCode.E or inputObject.KeyCode == Enum.KeyCode.Space then
+			k5 = true
+			cam3 = cs end
+		if inputObject.KeyCode == Enum.KeyCode.Q or inputObject.KeyCode == Enum.KeyCode.LeftControl then
+			k6 = true
+			cam3 = (cs*-1) end
+	end
+end
+game:GetService("UserInputService").InputBegan:connect(kp1)
+function kp2(inputObject, gameProcessedEvent)
+	if not gameProcessedEvent and game:GetService('Players').LocalPlayer.Character and game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC') then
+		if inputObject.KeyCode == Enum.KeyCode.W or inputObject.KeyCode == Enum.KeyCode.Up then
+			k1 = false
+			if k2 == false then
+				cam1 = 0
+			end
+		end
+		if inputObject.KeyCode == Enum.KeyCode.S or inputObject.KeyCode == Enum.KeyCode.Down then
+			k2 = false
+			if k1 == false then
+				cam1 = 0
+			end
+		end
+		if inputObject.KeyCode == Enum.KeyCode.A or inputObject.KeyCode == Enum.KeyCode.Left then
+			k3= false
+			if k4== false then
+				cam2 = 0
+			end
+		end
+		if inputObject.KeyCode == Enum.KeyCode.D or inputObject.KeyCode == Enum.KeyCode.Right then
+			k4 = false
+			if k3 == false then
+				cam2 = 0
+			end
+		end
+		if inputObject.KeyCode == Enum.KeyCode.E or inputObject.KeyCode == Enum.KeyCode.Space then
+			k5 = false
+			if k6 == false then
+				cam3 = 0
+			end
+		end
+		if inputObject.KeyCode == Enum.KeyCode.Q or inputObject.KeyCode == Enum.KeyCode.LeftControl then
+			k6 = false
+			if k5 == false then
+				cam3 = 0
+			end
+		end
+	end
+end
+game:GetService("UserInputService").InputEnded:connect(kp2)
+function FC()
+	if not game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC') then
+		game:GetService('Players').LocalPlayer.PlayerScripts.ControlScript.Disabled = true
+		local fc = Instance.new('Part',game:GetService('Players').LocalPlayer.Character)
+		fc.CanCollide = false
+		fc.Anchored = true
+		fc.Transparency = 1
+		fc.Size = Vector3.new(1,1,1)
+		fc.Name = 'xFC'
+		fc.CFrame = game:GetService('Players').LocalPlayer.Character.Head.CFrame
+		local cam = workspace.CurrentCamera
+		cam.CameraSubject = fc
+		cam.CameraType = 'Custom'
+		movecam()
+	end end
+function UFC()
+	game:GetService('Players').LocalPlayer.PlayerScripts.ControlScript.Disabled = false
+	if game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC') then
+		game:GetService('Players').LocalPlayer.Character:FindFirstChild('xFC'):Destroy()
+		local cam = workspace.CurrentCamera
+		cam.CameraSubject = game:GetService('Players').LocalPlayer.Character.Humanoid
+		cam.CameraType = 'Custom'
+	end
+end
+
+addcmd('freecam','Allows you to freely move camera around the game',{'fc'},
+function(args, speaker)
+	FC()
+end)
+
+addcmd('fixcam','Fixes camera',{},
+function(args, speaker)
+	UFC()
+	workspace.CurrentCamera:remove()
+	wait(.1)
+	workspace.CurrentCamera.CameraSubject = Players.LocalPlayer.Character.Humanoid
+	workspace.CurrentCamera.CameraType = "Custom"
+	Players.LocalPlayer.CameraMinZoomDistance = 0.5
+	Players.LocalPlayer.CameraMaxZoomDistance = 400
+	Players.LocalPlayer.CameraMode = "Classic"
+end)
+
+addcmd('unfreecam','Disables freecam',{'nofreecam','unfc','nofc'},
+function(args, speaker)
+	UFC()
+end)
+
+addcmd('freecamspeed','Adjusts freecam speed',{'fcspeed'},
+function(args, speaker)
+	if isNumber(args[1]) then
+		cs = args[1]
+	end
+end)
+
+addcmd('firstp', 'Forces camera to go into first person',{},
+function(args, speaker)
+	Players.LocalPlayer.CameraMode = "LockFirstPerson"
+end)
+
+addcmd('thirdp', 'Allows camera to go into third person',{},
+function(args, speaker)
+	Players.LocalPlayer.CameraMode = "Classic"
+end)
+
+addcmd('maxzoom','Maximum camera zoom',{},
+function(args, speaker)
+	Players.LocalPlayer.CameraMaxZoomDistance = args[1]
+end)
+
+addcmd('unlockws', 'Unlocks the whole workspace',{'unlockworkspace'},
+function(args, speaker)
+	notify('Workspace Modified','Workspace unlocked')
+	wait(1)
+    local function unlock(instance) 
+        for i,v in pairs(instance:GetChildren()) do
+            if v:IsA("BasePart") then
+                v.Locked = false
+            end
+            unlock(v)
+        end
+    end
+    unlock(workspace)
+end)
+
+addcmd('lockws', 'Locks the whole workspace',{'lockworkspace'},
+function(args, speaker)
+	notify('Workspace Modified','Workspace locked')
+	wait(1)
+    local function lock(instance) 
+        for i,v in pairs(instance:GetChildren()) do
+            if v:IsA("BasePart") then
+                v.Locked = true
+            end
+            lock(v)
+        end
+    end
+    lock(workspace)
+end)
+
+addcmd('delete', 'removes any part with a certain name from the workspace (DOES NOT REPLICATE)',{'remove'},
+function(args, speaker)
+	part = getstring(false, 0)
+    local function dels(instance)
+        for i,v in pairs(instance:GetChildren())do
+            if v.Name:lower() == part:lower() then v:Destroy() end
+            dels(v)
+        end
+    end
+    dels(workspace)
+notify('Item(s) Deleted','Deleted ' ..getstring(false, 0))
+end)
+
+addcmd('deleteclass', 'removes any part with a certain classname from the workspace (DOES NOT REPLICATE)',{'removeclass','deleteclassname','removeclassname','dc'},
+function(args, speaker)
+	part = getstring(false, 0)
+    local function dels(instance)
+        for i,v in pairs(instance:GetChildren())do
+            if v.ClassName:lower() == part:lower() then v:Destroy() end
+            dels(v)
+        end
+    end
+    dels(workspace)
+notify('Item(s) Deleted','Deleted items with ClassName ' ..getstring(false, 0))
+end)
+
+addcmd('btools', 'Gives you building tools (DOES NOT REPLICATE)',{},
+function(args, speaker)
+	Instance.new("HopperBin", Players.LocalPlayer.Backpack).BinType = 1
+	Instance.new("HopperBin", Players.LocalPlayer.Backpack).BinType = 2
+	Instance.new("HopperBin", Players.LocalPlayer.Backpack).BinType = 3
+	Instance.new("HopperBin", Players.LocalPlayer.Backpack).BinType = 4
+end)
+
+addcmd('f3x', 'loads f3x tools',{'fex'},
+function(args, speaker)
+	loadstring(game:GetObjects("rbxassetid://1059691823")[1].Source)()
+end)
+
+addcmd('age','tells you the age of a player',{},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players) do
+		local players = getPlayer(args[1], speaker)
+		local platforms = {}
+		for i,v in pairs(players) do
+			local p = Players[v]
+			table.insert(platforms, p.Name.."'s age is: "..p.AccountAge)
+		end
+    notify('OS',table.concat(platforms, ',\n'))
+	end
+end)
+
+addcmd('os', "Shows a player's platform.", {'platform', 'device'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	local platforms = {}
+	for i,v in pairs(players) do
+		local p = Players[v]
+		table.insert(platforms, p.Name.."'s platform is: "..p.OsPlatform)
+	end
+	notify('OS',table.concat(platforms, ',\n'))
+end)
+
+addcmd('goto', 'go to a player',{'to'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		if Players[v].Character ~= nil then
+			if speaker.Character:FindFirstChild("Humanoid") then
+				speaker.Character.Humanoid.Jump = true
+			end
+			speaker.Character.HumanoidRootPart.CFrame = Players[v].Character.HumanoidRootPart.CFrame + Vector3.new(4,1,0)
+		end
+	end
+end)
+
+bringT = {}
+addcmd('loopbring','Loop brings a player to you (useful for killing)',{},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		spawn(function()
+			if FindInTable(bringT, Players[v].Name) then return end
+				table.insert(bringT, Players[v].Name)
+				local pchar=Players[v].Character
+				pchar.Humanoid.Jump = true
+				repeat wait()
+				pchar = Players[v].Character
+				for i,c in pairs(players) do
+					if pchar~= nil and pchar:FindFirstChild("HumanoidRootPart") and speaker.Character ~= nil and speaker.Character:FindFirstChild("HumanoidRootPart") then
+						pchar.HumanoidRootPart.CFrame = speaker.Character.HumanoidRootPart.CFrame + Vector3.new(4,1,0)
+					end
+				end
+			until not FindInTable(bringT, Players[v].Name)
+		end)
+	end
+end)
+
+addcmd('unloopbring','Undoes loopbring',{'noloopbring'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		spawn(function()
+			for a,b in pairs(bringT) do if b == Players[v].Name then table.remove(bringT, a) end end
+		end)
+	end
+end)
+
+addcmd('freeze', 'freezes a player',{'fr'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	if players ~= nil then
+		for i, v in pairs(players) do
+			spawn(function()
+				for i, x in next, Players[v].Character:GetDescendants() do
+					if x:IsA("Part") and not x.Anchored then
+						x.Anchored = true
+					end
+				end
+			end)
+		end
+	end
+end)
+
+addcmd('thaw', 'unfreezes a player',{'unfreeze','unfr'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	if players ~= nil then
+		for i, v in pairs(players) do
+			spawn(function()
+				for i, x in next, Players[v].Character:GetDescendants() do
+					if x:IsA("Part") and x.Anchored then
+						x.Anchored = false
+					end
+				end
+			end)
+		end
+	end
+end)
+
+addcmd('fekill','Kills a player (YOU NEED A TOOL)',{},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+-- illremember's cool fe kill script
+		local Target = Players[v].Name
+		game:GetService("Players").LocalPlayer.Character.Humanoid.Name = 1
+		local l = game:GetService("Players").LocalPlayer.Character["1"]:Clone()
+		l.Parent = game:GetService("Players").LocalPlayer.Character
+		l.Name = "Humanoid"
+		wait(0.1)
+		game:GetService("Players").LocalPlayer.Character["1"]:Destroy()
+		workspace.CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer.Character
+		game:GetService("Players").LocalPlayer.Character.Animate.Disabled = true
+		wait(0.1)
+		game:GetService("Players").LocalPlayer.Character.Animate.Disabled = false
+		game:GetService("Players").LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+		for i,v in pairs(game:GetService'Players'.LocalPlayer.Backpack:GetChildren())do
+			game:GetService("Players").LocalPlayer.Character.Humanoid:EquipTool(v)
+			v.CanBeDropped = true
+		end
+		wait(0.1)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[Target].Character.HumanoidRootPart.CFrame
+		wait(0.1)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[Target].Character.HumanoidRootPart.CFrame
+		wait(0.2)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-10000,-100, -10000))
+	end
+end)
+
+oofing = false
+addcmd('loopoof','Loops everyones character sounds (everyone can hear)',{},
+function(args, speaker)
+	oofing = true
+	repeat wait(0.01)
+		for i,v in pairs(game:GetService'Players':GetPlayers()) do
+			if v.Character ~= nil and v.Character:FindFirstChild'Head' then
+				for _,x in pairs(v.Character.Head:GetChildren()) do
+					if x:IsA'Sound' then x.Playing = true end
+				end
+			end
+		end
+	until oofing == false
+end)
+
+addcmd('unloopoof','Stops the oof chaos',{},
+function(args, speaker)
+	oofing = false
+end)
+
+addcmd('respawn','Respawns you',{},
+function(args, speaker)
+	respawn(Players.LocalPlayer)
+end)
+
+addcmd('refresh', 'Respawns and brings you back to the same position',{'re'},
+function(args, speaker)
+	refresh(Players.LocalPlayer)
+end)
+
+addcmd('god','Gives you godmode',{''},
+function(args, speaker)
+	Players.LocalPlayer.Character.Humanoid.Name = 1
+	local l = Players.LocalPlayer.Character["1"]:Clone()
+	l.Parent = Players.LocalPlayer.Character
+	l.Name = "Humanoid"
+	wait(0.1)
+	Players.LocalPlayer.Character["1"]:Destroy()
+	workspace.CurrentCamera.CameraSubject = Players.LocalPlayer.Character
+	Players.LocalPlayer.Character.Animate.Disabled = true
+	wait(0.1)
+	Players.LocalPlayer.Character.Animate.Disabled = false
+	Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+end)
+
+addcmd('invisible','Makes you invisible to other players',{'invis'},
+function(args, speaker)
+-- Elite1337#9377 & Timeless#4044
+local function CheckRig()
+    if Players.LocalPlayer.Character then
+        local Humanoid = Players.LocalPlayer.Character:WaitForChild('Humanoid')
+        if Humanoid.RigType == Enum.HumanoidRigType.R15 then
+            return 'R15'
+        else
+            return 'R6'
+        end
+    end
+end
+local function InitiateInvis()
+    local Character = Players.LocalPlayer.Character
+    local StoredCF = Character.PrimaryPart.CFrame
+        local Part = Instance.new('Part',workspace)
+        Part.Size = Vector3.new(5,0,5)
+        Part.Anchored = true
+        Part.CFrame = CFrame.new(Vector3.new(9999,9999,9999))
+        Character.PrimaryPart.CFrame = Part.CFrame*CFrame.new(0,3,0)
+        spawn(function()
+            wait(3)
+            Part:Destroy()
+        end)
+    if CheckRig() == 'R6' then
+        local Clone = Character.HumanoidRootPart:Clone()
+        Character.HumanoidRootPart:Destroy()
+        Clone.Parent = Character
+    else
+        local Clone = Character.LowerTorso.Root:Clone()
+        Character.LowerTorso.Root:Destroy()
+        Clone.Parent = Character.LowerTorso
+    end
+end
+InitiateInvis()
+end)
+
+addcmd('strengthen','Changes CustomPhysicalProperties in your player',{},
+function(args, speaker)
+	for _, child in pairs(Players.LocalPlayer.Character:GetDescendants()) do
+		if child.ClassName == "Part" then
+			child.CustomPhysicalProperties = PhysicalProperties.new(100, 0.3, 0.5)
+		end
+	end
+end)
+
+addcmd('weaken','Changes CustomPhysicalProperties in your player',{},
+function(args, speaker)
+	for _, child in pairs(Players.LocalPlayer.Character:GetDescendants()) do
+		if child.ClassName == "Part" then
+			child.CustomPhysicalProperties = PhysicalProperties.new(0, 0.3, 0.5)
+		end
+	end
+end)
+
+addcmd('unweaken',' Undoes strength and weaken',{'unstrengthen'},
+function(args, speaker)
+	for _, child in pairs(Players.LocalPlayer.Character:GetDescendants()) do
+		if child.ClassName == "Part" then
+			child.CustomPhysicalProperties = PhysicalProperties.new(0.7, 0.3, 0.5)
+		end
+	end
+end)
+
+addcmd('jpower', 'change a players jump height',{'grav','jumppower','jp'},
+function(args, speaker)
+	if Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+		Players.LocalPlayer.Character.Humanoid.JumpPower=tonumber(args[1])
+	end
+end)
+
+addcmd('hipheight', 'adjusts hip height',{'hheight'},
+function(args, speaker)
+	if Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+		Players.LocalPlayer.Character.Humanoid.HipHeight = args[1]
+	end
+end)
+
+addcmd('dance','Makes you d a n c e',{},
+function(args, speaker)
+	local pchar=Players.LocalPlayer.Character
+		local anim = nil		
+		local dance1 = math.random(1,7)
+		if dance1 == 1 then
+		anim = '27789359'
+		end
+		if dance1 == 2 then
+		anim = '30196114'
+		end
+		if dance1 == 3 then
+		anim = '248263260'
+		end
+		if dance1 == 4 then
+		anim = '45834924'
+		end
+		if dance1 == 5 then
+		anim = '33796059'
+		end
+		if dance1 == 6 then
+		anim = '28488254'
+		end
+		if dance1 == 7 then
+		anim = '52155728'
+		end
+	local animation = Instance.new("Animation")
+	animation.AnimationId = "rbxassetid://"..anim
+	local animTrack = pchar.Humanoid:LoadAnimation(animation)
+	animTrack:Play()
+end)
+
+addcmd('nolimbs', 'Removes your limbs',{'rlimbs'},
+function(args, speaker)
+	for i,v in pairs(Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA("BasePart") and
+			v.Name == "Right Leg" or
+			v.Name == "Left Leg" or
+			v.Name == "Right Arm" or
+			v.Name == "Left Arm" then
+			v:Destroy()
+		end
+	end
+end)
+
+addcmd('noarms', 'Removes your arms',{'rarms'},
+function(args, speaker)
+	for i,v in pairs(Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA("BasePart") and
+			v.Name == "Right Arm" or
+			v.Name == "Left Arm" then
+			v:Destroy()
+		end
+	end
+end)
+
+addcmd('nolegs', 'Removes your arms',{'rlegs'},
+function(args, speaker)
+	for i,v in pairs(Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA("BasePart") and
+			v.Name == "Right Leg" or
+			v.Name == "Left Leg" then
+			v:Destroy()
+		end
+	end
+end)
+
+addcmd('sit', 'Makes your character sit',{},
+function(args, speaker)
+	if Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+		Players.LocalPlayer.Character.Humanoid.Sit = true
+	end
+end)
+
+addcmd('team','Changes your team. Sometimes fools the game if localscripts are used.',{},
+function(args, speaker)
+	local teamname = nil
+	for a,b in pairs(game.Teams:GetChildren()) do
+		local L_name = b.Name:lower()
+		local F = L_name:find(getstring(true, 0))
+		if F == 1 then
+			teamname = b 
+		end
+	end
+	Players.LocalPlayer.Team = teamname
+end)
+
+addcmd('spasm','Makes you c r a z y',{},
+function(args, speaker)
+	local pchar=Players.LocalPlayer.Character
+	local AnimationId = "33796059"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = pchar.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(99)
+end)
+
+addcmd('animation','Makes your character preform an animation (must be by roblox to replicate)',{'anim'},
+function(args, speaker)
+	local pchar=Players.LocalPlayer.Character
+	local AnimationId = tostring(args[1])
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = pchar.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	if args[2] then
+		k:AdjustSpeed(tostring(args[2]))
+	end
+end)
+
+addcmd('tppos','Teleports you to a coordinate',{},
+function(args,speaker)
+	if #args < 3 then return end
+	local tpX,tpY,tpZ = tonumber(args[1]),tonumber(args[2]),tonumber(args[3])
+	local char = Players.LocalPlayer.Character
+	if char and char:FindFirstChild("HumanoidRootPart") then
+		char.HumanoidRootPart.CFrame = CFrame.new(tpX,tpY,tpZ)
+	end
+end)
+
+addcmd('offset','Offsets you by a coordinate',{},
+function(args,speaker)
+	if #args < 3 then return end
+	local tpX,tpY,tpZ = tonumber(args[1]),tonumber(args[2]),tonumber(args[3])
+	local char = Players.LocalPlayer.Character
+	if char and char:FindFirstChild("HumanoidRootPart") then
+		char.HumanoidRootPart.CFrame = char.HumanoidRootPart.CFrame + Vector3.new(tpX,tpY,tpZ)
+	end
+end)
+
+addcmd('speed', 'Change your walkspeed',{'ws'},
+function(args, speaker)
+    local players = getPlayer(args[1], speaker)
+	if Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+		Players.LocalPlayer.Character.Humanoid.WalkSpeed=tonumber(args[1])
+	end
+end)
+
+addcmd('tools', 'Copies tools from ReplicatedStorage and lighting',{'gears'},
+function(args, speaker)
+	local function copy(instance)
+		for i,c in pairs(instance:GetChildren())do
+			if c:IsA('Tool') or c:IsA('HopperBin') then
+				c:Clone().Parent = Players.LocalPlayer.Backpack
+			end
+			copy(c)
+		end
+	end
+	copy(game:GetService("Lighting"))
+	local function copy(instance)
+		for i,c in pairs(instance:GetChildren())do
+			if c:IsA('Tool') or c:IsA('HopperBin') then
+			c:Clone().Parent = Players.LocalPlayer.Backpack
+			end
+			copy(c)
+		end
+	end
+	copy(game.ReplicatedStorage)
+	notify('Tools','Copied tools from ReplicatedStorage and Lighting')
+end)
+
+addcmd('keeptools', 'Saves tools to startergear',{'startertools','stools','ktools'},
+function(args, speaker)
+	local function copy(instance)
+		for i,c in pairs(instance:GetChildren())do
+			if c:IsA('Tool') or c:IsA('HopperBin') then
+				c:Clone().Parent = Players.LocalPlayer.StarterGear
+			end
+			copy(c)
+        end
+    end
+    copy(Players.LocalPlayer.Backpack)
+	local function copy(instance)
+		for i,c in pairs(instance:GetChildren())do
+			if c:IsA('Tool') or c:IsA('HopperBin') then
+				c:Clone().Parent = Players.LocalPlayer.StarterGear
+			end
+			copy(c)
+		end
+	end
+	copy(Players.LocalPlayer.Character)
+	notify('Tools','Copied tools to StarterGear')
+end)
+
+addcmd('nokeeptools', 'Deletes tools in startergear',{'unkeeptools','nokeeptools','nostartertools','unstartertools','nostools','unstools','noktools','unktools'},
+function(args, speaker)
+	for i,c in pairs(Players.LocalPlayer.StarterGear:GetChildren())do
+		if c:IsA('Tool') or c:IsA('HopperBin') then c:destroy()
+		end
+	end
+	notify('Tools','Cleared tools from StarterGear')
+end)
+
+addcmd('notools', 'Removes tools from character and backpack',{'rtools','clrtools','removetools'},
+function(args, speaker)
+	for i,v in pairs(Players.LocalPlayer.Backpack:GetDescendants()) do
+		if v:IsA('Tool') or v:IsA('HopperBin') then
+			v:destroy()
+		end
+	end
+	for i,v in pairs(Players.LocalPlayer.Character:GetDescendants()) do
+		if v:IsA('Tool') or v:IsA('HopperBin') then
+			v:destroy()
+		end
+	end
+	notify('Tools','Removed tools')
+end)
+
+addcmd('explorer', 'Opens DEX explorer',{'dex'},
+function(args, speaker)
+	loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+end)
+
+addcmd('remotespy', 'Prints remotes',{'remotes'},
+function(args, speaker)
+	notify('Remotespy','Printed remotes')
+	function getem(o)
+		for i,v in pairs(o:children())do
+			if string.match(v.ClassName, "RemoteEvent") or string.match(v.ClassName, "RemoteFunction") then              
+				print("Name: "..v.Name.." | ".."Type: "..v.ClassName.." | ".."Location: ".."game."..v:GetFullName())
+			end
+			getem(v)
+		end
+	end
+	pcall(getem,game)
+end)
+
+addcmd('orbit', 'Orbit around a player',{},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		local o = Instance.new("RocketPropulsion")
+		o.Parent = Players.LocalPlayer.Character.HumanoidRootPart
+		o.Name = "Orbit"
+		o.Target = Players[v].Character.HumanoidRootPart
+		o:Fire()
+		execCmd('noclip')
+	end
+end)
+
+addcmd('unorbit', 'Stops orbiting',{},
+function(args, speaker)
+	execCmd('clip')
+	Players.LocalPlayer.Character.HumanoidRootPart.Orbit:Destroy()
+end)
+
+loopgoto = nil
+addcmd('loopgoto', 'Loop teleport to a player',{},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		loopgoto = Players[v]
+		repeat wait() if Players[v].Character ~= nil then
+			if speaker.Character:FindFirstChild("Humanoid") then
+				speaker.Character.Humanoid.Jump = true
+			end
+			speaker.Character:MoveTo(Players[v].Character.HumanoidRootPart.Position)
+		end
+		until loopgoto ~= Players[v]
+	end
+end)
+
+addcmd('unloopgoto', 'Stops teleporting you to a player',{'noloopgoto'},
+function(args, speaker)
+	loopgoto = nil
+end)
+
+spamming = false
+addcmd('spam', 'Makes you spam the chat',{},
+function(args, speaker)
+	spamming = true
+	repeat wait(1)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(getstring(false, 0), "All")
+	until spamming == false
+end)
+
+addcmd('nospam', 'Turns off spam',{'unspam'},
+function(args, speaker)
+	spamming = false
+end)
+
+pmspamming = {}
+addcmd('pmspam', 'Makes you spam a players whispers',{},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		spawn(function()
+		if FindInTable(pmspamming, Players[v].Name) then return end
+			table.insert(pmspamming, Players[v].Name)
+			repeat wait(1)
+				game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/w "..Players[v].Name.." "..getstring(false, 1), "All")
+			until not FindInTable(pmspamming, Players[v].Name)
+		end)
+	end
+end)
+
+addcmd('nopmspam', 'turns off pm spam',{'unpmspam'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		spawn(function()
+			for a,b in pairs(pmspamming) do
+				if b == Players[v].Name then
+					table.remove(pmspamming, a)
+				end
+			end
+		end)
+	end
+end)
+
+addcmd('blockhead', 'Turns your head into a block',{},
+function(args, speaker)
+	Players.LocalPlayer.Character.Head.Mesh:Destroy()
+end)
+
+bangplr = nil
+
+addcmd('bang', 'owo',{'rape'},
+function(args, speaker)
+	local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		local Anim2 = Instance.new("Animation")
+		Anim2.AnimationId = "rbxassetid://148840371"
+		local track2 = Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim2)
+		track2:Play(.1, 1, 1)
+		bangplr = Players[v].Name
+	end
+end)
+
+addcmd('unbang', 'uwu',{'unrape'},
+function(args, speaker)
+	bangplr = nil
+end)
+
+gtools = false
+addcmd('grabtools', 'Automatically get tools that are dropped',{},
+function(args, speaker)
+	workspace.ChildAdded:connect(function(part)
+		if gtools then
+			if part:IsA("Tool") then
+				part.Handle.CFrame = Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			end
+		end
+	end)
+end)
+
+addcmd('nograbtools', 'Disables grabtools',{'ungrabtools'},
+function(args, speaker)
+	gtools = false
+end)
+
+addcmd('givetools', 'Give your tools to a player',{},
+function(args, speaker)
+	for i,t in pairs(Players.LocalPlayer.Backpack:GetDescendants()) do
+		if t:IsA("Tool") then
+			t.Parent = Players.LocalPlayer.Character
+			wait()
+			local players = getPlayer(args[1], speaker)
+			for i,v in pairs(players)do
+				t.Parent = Players[v].Character
+			end
+		end
+	end
+end)
+
+addcmd('copytools', 'Copies a players tools',{'clonetools'},
+function(args, speaker)
+    local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players)do
+		spawn(function()
+			for i,v in pairs(Players[v].Backpack:GetChildren()) do
+				if v:IsA('Tool') or v:IsA('HopperBin') then
+					v:Clone().Parent = speaker.Backpack
+				end
+			end
+		end)
+	end
+end)
+
+addcmd('naked', 'Removes your clothing',{},
+function(args, speaker)
+	for i,v in pairs(Players.LocalPlayer.Character:GetDescendants()) do
+		if v:IsA("Clothing") then
+			v:Destroy()
+		end
+	end
+end)
+
+addcmd('spawnpoint', 'Sets your characters position to your spawnpoint',{'spawn'},
+function(args, speaker)
+	spawnpos = Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	spawnpoint = true
+	notify('Spawn Point','Spawn point created at '..tostring(spawnpos))
+end)
+
+addcmd('nospawnpoint', 'Removes your custom spawn point',{'nospawn'},
+function(args, speaker)
+	spawnpoint = false
+	notify('Spawn Point','Removed spawn point')
+end)
+
+addcmd('hatspin', 'Spins your characters accessorys',{'spinhats'},
+function(args, speaker)
+	for i,v in pairs(Players.LocalPlayer.Character:GetDescendants()) do
+		if v:IsA("Accessory") or v:IsA("Hat") then
+			local keep = Instance.new("BodyPosition") keep.Parent = v.Handle keep.Name = "no"
+			local spin = Instance.new("BodyAngularVelocity") spin.Parent = v.Handle spin.Name = "ha"
+			if v.Handle.AccessoryWeld then
+				v.Handle.AccessoryWeld:Destroy()
+			end
+			if args[1] then
+				spin.AngularVelocity = Vector3.new(0, args[1], 0)
+				spin.MaxTorque = Vector3.new(0, args[1] * 2, 0)
+			else
+				spin.AngularVelocity = Vector3.new(0, 100, 0)
+				spin.MaxTorque = Vector3.new(0, 200, 0)
+			end
+			keep.P = 30000
+			keep.D = 50
+			spinning = keep
+			spinenabled = true
+		end
+	end
+end)
+
+addcmd('unhatspin', 'Undoes spinhats',{'unspinhats'},
+function(args, speaker)
+	for i,v in pairs(Players.LocalPlayer.Character:GetDescendants()) do
+		if v:IsA("Accessory") or v:IsA("Hat") then
+			pcall(function()
+				if v:IsA("Accessory") or v:IsA("Hat") then
+					v.Parent = workspace
+				end
+				wait(0.5)
+				v.Handle.no:Destroy()
+				v.Handle.ha:Destroy()
+				if v:IsA("Accessory") or v:IsA("Hat") then
+					v.Parent = Players.LocalPlayer.Character
+				end
+			end)
+		end
+	end
+end)
