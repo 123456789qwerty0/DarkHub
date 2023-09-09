@@ -1,0 +1,51 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local window = lib:Window('DARKHUB OP')
+window:Slider('sonic speed', {
+    max = 80,
+    def = 20
+}, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+window:Toggle('im sorry for the gui quality im lazy', function(enabled)
+    print(enabled)
+end)
+window:Toggle('Doors', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/doors'))()
+end)
+window:Toggle('doors mods', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/doors_mods'))()
+end)
+window:Toggle('BIG PAINTBALL OP GUI AUTOFARM AND MORE!!', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/big%20paintball'))()
+end)
+window:Toggle('item gui', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/item%20gui'))()
+end)
+window:Toggle('darkhub old', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/darkhub-view'))()
+end)
+window:Toggle('admin gui', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/admin'))()
+end)
+window:Toggle('infinte yield fe BETA', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/infinte%20yield%20beta'))()
+end)
+window:Toggle('fe mods', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/fe_mods'))()
+end)
+window:Toggle('ahhhhhhhhhhhhhhh hub💀', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/ahhh%20hub'))()
+end)
+window:Toggle('settings/preferences', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/settings'))()
+end)
+window:Toggle('💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/doors/main%20gui/system/files/scripts/selftype'))()
+end)
+window:Slider('slider', {
+    max = 80,
+    def = 20
+}, function(value)
+    game:GetService('Players').LocalPlayer.Character.Humanoid.JumpPower = value
+end)
