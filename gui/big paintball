@@ -2,7 +2,7 @@ local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/
 local window = lib:Window('big paintball 4 darkhub')
 
 window:Toggle('autofarm v to toggle', function(enabled)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/big%20paintball%20autofarm.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/big%20paintball%20autofarm'))()
 end)
 
 window:Toggle('STARSCRIPTSX', function(enabled)
