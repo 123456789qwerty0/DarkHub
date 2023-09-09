@@ -1,0 +1,60 @@
+-- Create a ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+-- Create a frame to hold the GUI elements
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 200, 0, 100)
+frame.Position = UDim2.new(0.5, -100, 0.5, -50)
+frame.BackgroundColor3 = Color3.new(0, 1, 1) -- Cyan color
+frame.Parent = screenGui
+
+-- Create a title label
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Size = UDim2.new(1, 0, 0, 20)
+titleLabel.Text = "DarkHub ChatSpam"
+titleLabel.Parent = frame
+
+-- Create a textbox
+local textBox = Instance.new("TextBox")
+textBox.Size = UDim2.new(1, -20, 0, 30)
+textBox.Position = UDim2.new(0, 10, 0, 40)
+textBox.Parent = frame
+
+-- Create a button to spam
+local spamButton = Instance.new("TextButton")
+spamButton.Size = UDim2.new(0, 80, 0, 30)
+spamButton.Position = UDim2.new(0.25, -40, 0, 80)
+spamButton.Text = "Spam"
+spamButton.Parent = frame
+
+-- Create a button to close the GUI
+local closeButton = Instance.new("TextButton")
+closeButton.Size = UDim2.new(0, 80, 0, 30)
+closeButton.Position = UDim2.new(0.75, -40, 0, 80)
+closeButton.Text = "Close"
+closeButton.TextColor3 = Color3.new(0, 1, 1) -- Cyan text color
+closeButton.Parent = frame
+
+-- Function to execute the code
+local function executeCode()
+    local inputText = textBox.Text
+    local numLoops = 100
+
+    for i = 1, numLoops do
+        wait(1)
+        local A_1 = inputText
+        local A_2 = "All"
+        local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+        Event:FireServer(A_1, A_2)
+    end
+end
+
+-- Function to close the GUI
+local function closeGUI()
+    screenGui:Destroy()
+end
+
+-- Connect the button click events
+spamButton.MouseButton1Click:Connect(executeCode)
+closeButton.MouseButton1Click:Connect(closeGUI)
