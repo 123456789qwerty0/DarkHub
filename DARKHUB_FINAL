@@ -43,9 +43,6 @@ end)
 window:Toggle('💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀', function(enabled)
     loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/doors/main%20gui/system/files/scripts/selftype'))()
 end)
-window:Slider('slider', {
-    max = 80,
-    def = 20
-}, function(value)
-    game:GetService('Players').LocalPlayer.Character.Humanoid.JumpPower = value
+window:Toggle('WALKSPEED', function(enabled)
+     loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/WalkSpeed'))()
 end)
