@@ -1,0 +1,11 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local window = lib:Window('WalkSPEED/SONIC SPEED!!!')
+window:Slider('Sonic Speed', {
+    max = 80,
+    def = 20
+}, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+window:Toggle('back', function(enabled)
+     loadstring(Game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/index/main/test'))()
+end)
