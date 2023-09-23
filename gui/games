@@ -51,3 +51,11 @@ end)
 b:Button("doors god mode does not work 4 seek :) f9 to toggle no mobile ofc",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/god.lua'))()
 end)
+
+b:Button("doors (DarkHub)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/doors'))()
+end)
+
+b:Button("doors mods -DarkHub",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/god.lua'))()
+end)
