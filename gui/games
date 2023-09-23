@@ -1,0 +1,53 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/ez-ui-lib-lua/main/what')))()
+
+local w = library:CreateWindow("Games -DarkHub") -- Creates the window
+
+local b = w:CreateFolder("more -DarkHub") -- Creates the folder(U will put here your buttons,etc)
+
+b:Button("Doors -LolCat kardin hong script",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/awesomescript/main/main"..game.PlaceId))()
+end)
+
+b:Button("NEW Anime Fighting Simulator X AFX Muimi Hub - Auto Farm! (key https://linkvertise.com/849240/muimi-hub-1/1)",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bunnynwy/games/main/AnimeFightingX"))()
+end)
+
+b:Button("Big paintball (Bulit in DarkHub exclusive)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/big%20paintball'))()
+end)
+
+b:Button("MM2 (Vynixu's Script)",function()
+    loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+b:Button("KAT ",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/LfFp4ckv'))()
+end)
+
+b:Button("Bulid a boat",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/cheat', true))()
+end)
+
+b:Button("Piggy",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Loader.lua'))()
+end)
+
+b:Button("break in 2 story script (AutoFarm)",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/u8U8bGne'))()
+end)
+
+b:Button("Blackking script doors but kinda cheap and shorter",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/blackking/main/kinda%20cheap%20and%20shorter%20(doors).lua'))()
+end)
+
+b:Button("shadow scripts no wait",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/blackking/main/shadow%20script%3F'))()
+end)
+
+b:Button("bloxburg autofarm gui",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub'))()
+end)
+
+b:Button("doors god mode does not work 4 seek :) f9 to toggle no mobile ofc",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/god.lua'))()
+end)
