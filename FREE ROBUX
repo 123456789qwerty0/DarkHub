@@ -1,0 +1,430 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local Line = Instance.new("TextLabel")
+local __________ = Instance.new("TextLabel")
+local Line_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local ______ = Instance.new("TextLabel")
+local EastBorder = Instance.new("TextLabel")
+local WestBorder = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local bobuxdivmention = Instance.new("TextLabel")
+local TopBorder = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local BottomBorder = Instance.new("TextLabel")
+local HelpersBorderSeperator = Instance.new("TextLabel")
+local BobuxKing = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local TextLabel_17 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ScrollingFrame.Parent = ScreenGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.416666657, 0, 0.0621592179, 0)
+ScrollingFrame.Size = UDim2.new(0, 353, 0, 292)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 231.981705)
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 87, 20)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.603174627, 0, 0.0621592179, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Free robux generator!!!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = ScreenGui
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(13, 132, 51)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.416666657, 0, 0.0621592179, 0)
+TextLabel_2.Size = UDim2.new(0, 152, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "100% WORKING!!!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, -0.0098146135, 0)
+Frame.Size = UDim2.new(0, 295, 0, 162)
+
+TextBox.Parent = ScreenGui
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Size = UDim2.new(0, 295, 0, 94)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0621693134, 0, 0.173391506, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "GENERATE"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Line.Name = "Line"
+Line.Parent = ScreenGui
+Line.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.416666657, 0, 0.143947661, 0)
+Line.Size = UDim2.new(0, 341, 0, 6)
+Line.Font = Enum.Font.SourceSans
+Line.Text = ""
+Line.TextColor3 = Color3.fromRGB(0, 0, 0)
+Line.TextSize = 14.000
+
+__________.Name = "^__________^"
+__________.Parent = ScreenGui
+__________.BackgroundColor3 = Color3.fromRGB(74, 201, 255)
+__________.BorderColor3 = Color3.fromRGB(0, 0, 0)
+__________.BorderSizePixel = 0
+__________.Position = UDim2.new(0.416666657, 0, 0.153762266, 0)
+__________.Size = UDim2.new(0, 341, 0, 29)
+__________.Font = Enum.Font.SourceSans
+__________.Text = "^________^"
+__________.TextColor3 = Color3.fromRGB(0, 0, 0)
+__________.TextSize = 14.000
+
+Line_2.Name = "Line"
+Line_2.Parent = ScreenGui
+Line_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0.424603164, 0, 0.199563801, 0)
+Line_2.Size = UDim2.new(0, 341, 0, 6)
+Line_2.Font = Enum.Font.SourceSans
+Line_2.Text = ""
+Line_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.TextSize = 14.000
+
+TextLabel_3.Parent = ScreenGui
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(37, 255, 70)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.416666657, 0, 0.20726715, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "100% FREE (NO MONEY NEEDED!!)"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = ScreenGui
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.677290261, 0, 0.20726715, 0)
+TextLabel_4.Size = UDim2.new(0, 141, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "IT'S A HUGE \"WOW\"!"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+______.Name = "______"
+______.Parent = ScreenGui
+______.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+______.BorderColor3 = Color3.fromRGB(0, 0, 0)
+______.BorderSizePixel = 0
+______.Position = UDim2.new(0.416666657, 0, 0.280590445, 0)
+______.Size = UDim2.new(0, 341, 0, 6)
+______.Font = Enum.Font.SourceSans
+______.Text = ""
+______.TextColor3 = Color3.fromRGB(0, 0, 0)
+______.TextSize = 14.000
+
+EastBorder.Name = "EastBorder"
+EastBorder.Parent = ScreenGui
+EastBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EastBorder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EastBorder.BorderSizePixel = 0
+EastBorder.Position = UDim2.new(0.416666657, 0, 0.0610407963, 0)
+EastBorder.Size = UDim2.new(0, 8, 0, 292)
+EastBorder.Font = Enum.Font.SourceSans
+EastBorder.Text = ""
+EastBorder.TextColor3 = Color3.fromRGB(0, 0, 0)
+EastBorder.TextSize = 14.000
+
+WestBorder.Name = "WestBorder"
+WestBorder.Parent = ScreenGui
+WestBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WestBorder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WestBorder.BorderSizePixel = 0
+WestBorder.Position = UDim2.new(0.88359791, 0, 0.0610407963, 0)
+WestBorder.Size = UDim2.new(0, 8, 0, 292)
+WestBorder.Font = Enum.Font.SourceSans
+WestBorder.Text = ""
+WestBorder.TextColor3 = Color3.fromRGB(0, 0, 0)
+WestBorder.TextSize = 14.000
+
+TextLabel_5.Parent = ScreenGui
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(159, 147, 58)
+TextLabel_5.BorderColor3 = Color3.fromRGB(159, 147, 58)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.427248687, 0, 0.2886388, 0)
+TextLabel_5.Size = UDim2.new(0, 215, 0, 143)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "ROBLOX"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 14.000
+
+bobuxdivmention.Name = "bobuxdivmention"
+bobuxdivmention.Parent = ScreenGui
+bobuxdivmention.BackgroundColor3 = Color3.fromRGB(177, 57, 35)
+bobuxdivmention.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bobuxdivmention.BorderSizePixel = 0
+bobuxdivmention.Position = UDim2.new(0.633847237, 0, 0.31013307, 0)
+bobuxdivmention.Size = UDim2.new(0, 48, 0, 50)
+bobuxdivmention.Font = Enum.Font.SourceSans
+bobuxdivmention.Text = "🅱️obux :D"
+bobuxdivmention.TextColor3 = Color3.fromRGB(0, 0, 0)
+bobuxdivmention.TextSize = 14.000
+
+TopBorder.Name = "TopBorder"
+TopBorder.Parent = ScreenGui
+TopBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TopBorder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBorder.BorderSizePixel = 0
+TopBorder.Position = UDim2.new(0.416666657, 0, 0.0518289246, 0)
+TopBorder.Size = UDim2.new(0, 360, 0, 6)
+TopBorder.Font = Enum.Font.SourceSans
+TopBorder.Text = ""
+TopBorder.TextColor3 = Color3.fromRGB(0, 0, 0)
+TopBorder.TextSize = 14.000
+
+TextLabel_6.Parent = ScreenGui
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(159, 147, 58)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.519841254, 0, 0.289802283, 0)
+TextLabel_6.Size = UDim2.new(0, 222, 0, 14)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "honorable mentions :D"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 14.000
+
+BottomBorder.Name = "BottomBorder"
+BottomBorder.Parent = ScreenGui
+BottomBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BottomBorder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BottomBorder.BorderSizePixel = 0
+BottomBorder.Position = UDim2.new(0.415357739, 0, 0.509351969, 0)
+BottomBorder.Size = UDim2.new(0, 374, 0, 6)
+BottomBorder.Font = Enum.Font.SourceSans
+BottomBorder.Text = ""
+BottomBorder.TextColor3 = Color3.fromRGB(0, 0, 0)
+BottomBorder.TextSize = 14.000
+
+HelpersBorderSeperator.Name = "HelpersBorderSeperator"
+HelpersBorderSeperator.Parent = ScreenGui
+HelpersBorderSeperator.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HelpersBorderSeperator.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HelpersBorderSeperator.BorderSizePixel = 0
+HelpersBorderSeperator.Position = UDim2.new(0.696771324, 0, 0.309761345, 0)
+HelpersBorderSeperator.Size = UDim2.new(0, 9, 0, 130)
+HelpersBorderSeperator.Font = Enum.Font.SourceSans
+HelpersBorderSeperator.Text = ""
+HelpersBorderSeperator.TextColor3 = Color3.fromRGB(0, 0, 0)
+HelpersBorderSeperator.TextSize = 14.000
+
+BobuxKing.Name = "BobuxKing"
+BobuxKing.Parent = ScreenGui
+BobuxKing.BackgroundColor3 = Color3.fromRGB(177, 57, 35)
+BobuxKing.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BobuxKing.BorderSizePixel = 0
+BobuxKing.Position = UDim2.new(0.708454549, 0, 0.308597744, 0)
+BobuxKing.Size = UDim2.new(0, 137, 0, 50)
+BobuxKing.Font = Enum.Font.SourceSans
+BobuxKing.Text = "🅱️obux King :D🗿🗿🗿🗿"
+BobuxKing.TextColor3 = Color3.fromRGB(0, 0, 0)
+BobuxKing.TextSize = 14.000
+
+TextLabel_7.Parent = ScreenGui
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.70811516, 0, 0.386898667, 0)
+TextLabel_7.Size = UDim2.new(0, 134, 0, 32)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "RoadBlox company"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextSize = 14.000
+
+Frame_2.Parent = ScreenGui
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.0209424086, 0, 0.961105466, 0)
+Frame_2.Size = UDim2.new(0, 334, 0, 25)
+
+TextLabel_8.Parent = ScreenGui
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(159, 147, 58)
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0, 0, 0.961105466, 0)
+TextLabel_8.Size = UDim2.new(0, 326, 0, 25)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "More scripts at https://www.roblox.com/users/1/profile :D"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.TextSize = 14.000
+
+Frame_3.Parent = ScreenGui
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-0.00916230399, 0, 0.31013307, 0)
+Frame_3.Size = UDim2.new(0, 324, 0, 100)
+
+TextLabel_9.Parent = ScreenGui
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.00785340276, 0, 0.31013307, 0)
+TextLabel_9.Size = UDim2.new(0, 311, 0, 28)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.TextSize = 14.000
+
+TextLabel_10.Parent = ScreenGui
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(-0.00916230399, 0, 0.359263062, 0)
+TextLabel_10.Size = UDim2.new(0, 325, 0, 62)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "USE THE PROVIDED TEXTBOX TO SAY HOW MUCH YOU WANT!"
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.TextSize = 14.000
+
+Frame_4.Parent = ScreenGui
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.676701546, 0, 0.54042989, 0)
+Frame_4.Size = UDim2.new(0, 241, 0, 299)
+
+TextLabel_11.Parent = ScreenGui
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.70811516, 0, 0.569600821, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️"
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.TextSize = 14.000
+
+TextLabel_12.Parent = ScreenGui
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.696335077, 0, 0.644831181, 0)
+TextLabel_12.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "ROBUX"
+TextLabel_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.TextSize = 14.000
+
+TextLabel_13.Parent = ScreenGui
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.702879608, 0, 0.721596718, 0)
+TextLabel_13.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "LEFT"
+TextLabel_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.TextSize = 14.000
+
+TextLabel_14.Parent = ScreenGui
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.696335077, 0, 0.838280499, 0)
+TextLabel_14.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "So, you have"
+TextLabel_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.TextSize = 14.000
+
+TextLabel_15.Parent = ScreenGui
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0.702879608, 0, 0.898157656, 0)
+TextLabel_15.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "♾️♾️♾️♾️♾️♾️♾️♾️♾️♾️"
+TextLabel_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.TextSize = 14.000
+
+TextLabel_16.Parent = ScreenGui
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(159, 147, 58)
+TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.719895303, 0, 0.936540484, 0)
+TextLabel_16.Size = UDim2.new(0, 200, 0, 41)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "ROBUX LEFT"
+TextLabel_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.TextSize = 14.000
+
+Frame_5.Parent = ScreenGui
+Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.481675386, 0, 0.692425787, 0)
+Frame_5.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel_17.Parent = ScreenGui
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0.481675386, 0, 0.692425787, 0)
+TextLabel_17.Size = UDim2.new(0, 102, 0, 100)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "➡️➡️➡️➡️➡️➡️"
+TextLabel_17.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.TextSize = 14.000
