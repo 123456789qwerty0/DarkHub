@@ -57,5 +57,5 @@ b:Button("doors (DarkHub)",function()
 end)
 
 b:Button("doors mods -DarkHub",function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/god.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/doors_mods'))()
 end)
