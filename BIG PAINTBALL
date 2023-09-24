@@ -1,0 +1,6 @@
+SupportedGames=game:GetService('HttpService'):JSONDecode(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/SupportedGames'));
+for _,v in pairs(SupportedGames)do
+    if game.PlaceId==tonumber(v)then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/'.._))()
+    end;
+end;
