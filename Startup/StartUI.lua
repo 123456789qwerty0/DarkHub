@@ -1,3 +1,4 @@
+--discord ui
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/UiLibraries/DiscordUI/Lib.lua")()
 
 local win = DiscordLib:Window("discord library")
