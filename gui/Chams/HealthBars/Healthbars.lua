@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/Chams/HealthBars/Loaded.lua",true))()
 local function ApplyESP(v)
    if v.Character and v.Character:FindFirstChildOfClass'Humanoid' then
        v.Character.Humanoid.NameDisplayDistance = 9e9
