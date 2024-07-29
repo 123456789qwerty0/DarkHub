@@ -7,7 +7,7 @@ local UIS = game:service("UserInputService")
 
 repeat wait() until Player.Character ~= nil and Player.Character.PrimaryPart ~= nil
 
-local LerpColorModule = loadstring(game:HttpGet("https://pastebin.com/raw/wRnsJeid"))()
+local LerpColorModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/Chams/Radar/LerpColorModule.lua"))()
 local HealthBarLerp = LerpColorModule:Lerp(Color3.fromRGB(255, 0, 0), Color3.fromRGB(0, 255, 0))
 
 local function NewCircle(Transparency, Color, Radius, Filled, Thickness)
