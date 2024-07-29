@@ -1,6 +1,6 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/UiLibraries/Wally/Lib.lua')))()
---wally's ui remade (archived by the darkhub team)
-local w = library:CreateWindow("ESP") -- Creates the window
+
+local w = library:CreateWindow("ESP [DarkHub]") -- Creates the window
 
 local b = w:CreateFolder("ESP") -- Creates the folder(U will put here your buttons,etc)
 
@@ -27,7 +27,6 @@ b:Button("Healthbars", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/Chams/HealthBars/Healthbars.lua'))()
 end)
 
-
 b:Button("Seere", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/Chams/Seere/Seere.lua",true))()
 end)
@@ -38,4 +37,8 @@ end)
 
 b:Button("UESP", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/Chams/UESP/Loader.lua",true))()
+end)
+
+b:Button("Radar", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/Chams/Radar/Main.lua",true))()
 end)
