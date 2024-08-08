@@ -1,4 +1,5 @@
---i did not make this [UNC made by ltseverydayyou [https://github.com/ltseverydayyou]
+--i did not make this UNC made by ltseverydayyou [https://github.com/ltseverydayyou]
+game.StarterGui:SetCore("SendNotification", {Title="Credits"; Text="UNC made by ltseverydayyou [https://github.com/ltseverydayyou]"; Duration=5;})
 local passes, fails, undefined = 0, 0, 0
 local running = 0
 
