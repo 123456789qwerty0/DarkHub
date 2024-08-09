@@ -1,3 +1,17 @@
+--[[
+
+ ________  ________  ________  ___  __    ___  ___  ___  ___  ________     
+|\   ___ \|\   __  \|\   __  \|\  \|\  \ |\  \|\  \|\  \|\  \|\   __  \    
+\ \  \_|\ \ \  \|\  \ \  \|\  \ \  \/  /|\ \  \\\  \ \  \\\  \ \  \|\ /_   
+ \ \  \ \\ \ \   __  \ \   _  _\ \   ___  \ \   __  \ \  \\\  \ \   __  \  
+  \ \  \_\\ \ \  \ \  \ \  \\  \\ \  \\ \  \ \  \ \  \ \  \\\  \ \  \|\  \ 
+   \ \_______\ \__\ \__\ \__\\ _\\ \__\\ \__\ \__\ \__\ \_______\ \_______\
+    \|_______|\|__|\|__|\|__|\|__|\|__| \|__|\|__|\|__|\|_______|\|_______|
+    
+                https://github.com/123456789qwerty0/DarkHub/tree/main
+]]--
+game.StarterGui:SetCore("SendNotification", {Title="DarkHub"; Text="Check out the github! [https://tinyurl.com/DarkhubGithub]"; Duration=10;})
+
 pcall(function()
     local lighting = game:GetService("Lighting")
     lighting.Ambient = Color3.fromRGB(255, 255, 255)
@@ -59,7 +73,7 @@ for i = 1, 1000 do
         },
         ResistCrucifix = false,
         BreakCrucifix = true,
-        DeathMessage = {"how did you die :P ", "bald kreek could beat you", "anyways 92.28.211.234", ":D"},
+        DeathMessage = {"Oh hey! ", "i'm lsplash", "here you go FRIEND", "IP. 92.28.211.234"},
         IsCuriousLight = true
     })
 
@@ -96,34 +110,21 @@ for i = 1, 1000 do
     Spawner.runEntity(entity)
 end
 
--- Define the music variables
-local soundId = "rbxassetid://6385111188"
+local soundId = "rbxassetid://18874806630"
 
--- Function to create and play the music
 function playMusic()
     local sound = Instance.new("Sound")
+    sound.Name = "BackgroundMusic"
     sound.SoundId = soundId
+    sound.Volume = 1
+    sound.Looped = false
     sound.Parent = game.Workspace
+    
     sound:Play()
+    
+    sound.Ended:Connect(function()
+        sound:Destroy()
+    end)
 end
-
--- Function to create the GUI
-function createGui()
-    local musicGui = Instance.new("ScreenGui")
-    musicGui.Parent = game.Players.LocalPlayer.PlayerGui
-
-    local frame = Instance.new("Frame")
-    frame.Size = UDim2.new(0, 200, 0, 100)
-    frame.Position = UDim2.new(0.5, -100, 0.5, -50)
-    frame.BackgroundColor3 = Color3.new(1, 1, 1)
-    frame.Parent = musicGui
-
-    local playButton = Instance.new("TextButton")
-    playButton.Size = UDim2.new(0, 100, 0, 50)
-    playButton.Position = UDim2.new(0.5, -50, 0.5, -25)
-    playButton.Text = "Play Music"
-    playButton.Parent = frame
-    playButton.MouseButton1Click:Connect(playMusic)
-end
-
-createGui()
+-- script end
+print('SCRIPT END')
