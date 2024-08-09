@@ -1,3 +1,5 @@
+--deobfuscated by 1234567789qwerty0
+-- i did not make this btw
 if game.GameId ~= 2440500124 then return end -- Universe ID
 
 if identifyexecutor and identifyexecutor():gsub(" ", "") == "Solara" then
